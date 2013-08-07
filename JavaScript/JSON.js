@@ -78,7 +78,7 @@ var json = {
 		"slider" :  ["Difficulty:", "6"],
 		"gnotes" :  ["Grooming Notes:", "#10 all over"],
 		"pnotes" :  ["Pet Notes:", "Good girl!"],
-		"sex"    :  ["Sex:", "Femal"]
+		"sex"    :  ["Sex:", "Female"]
 	},
 	"petInfo8"   : {
 		"oname"  :  ["Owner's Name:", "Hank"],
