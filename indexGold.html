@@ -15,10 +15,11 @@
         <meta http-equiv="cleartype" content= "on">
         <link rel="stylesheet" data-ajax="false" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
         <link href="CSS/styleGold.css" type="text/css" rel="stylesheet"/>
+        
         <!-- This application will give a groomer the ability to keep client information on dogs they groom. (At some point I would like to include before and after pictures and more detailed information about the client) -->
 <title>PetFolio</title>
    	</head>
-	<body> <!--Users will see the content in the body tag--> 
+	<body background-image:url(../IMG/background02.jpg)> <!--Users will see the content in the body tag--> 
     	<div data-role="page" id="home">
         	<div data-role="header" data-position="fixed" data-theme="d">
             	<h1>Groomer's PetFolio</h1>
@@ -30,15 +31,16 @@
             </div>
             <div>
 	<!-- HTML for SEARCH BAR -->
-			<div id="tfheader">
+			
 			<form>
      			<label for="search-1">Search:</label>
      			<input name="search-1" id="search-1" value="" type="search">
 			</form>
-			<div class="tfclear"></div>
+			
 			</div>
            <div data-role="content">
          		<li>Or Browse By:</li>
+                <div data-role="controlgroup">
                  <p><a href="#owners" data-role="button" data-icon="arrow-r" 	
                 	data-iconpos="right">Owner Names</a></p>
                  <p><a href="#pets" data-role="button" data-icon="arrow-r" 
@@ -48,7 +50,8 @@
                  <p><a href="#males" data-role="button" data-icon="arrow-r" 
                 	data-iconpos="right">Male Pets</a></p>	
                  <p><a href="#females" data-role="button" data-icon="arrow-r" 
-                	data-iconpos="right">Female Pets</a></p>			
+                	data-iconpos="right">Female Pets</a></p>
+                    </div>			
      		</div>
        </div>
              <div data-role="footer" data-position="fixed" data-theme="d">
@@ -100,6 +103,8 @@
                      <h4>link to about page</h4>
                    </div>
 				</div>
+            </body>
+         </html>
  	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
  	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
     <script src="JavaScript/mainGold.js"></script> 
