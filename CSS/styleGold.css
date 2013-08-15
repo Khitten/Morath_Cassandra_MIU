@@ -20,7 +20,7 @@ padding: 2px 2px 2px 2px;
 font-family: Georgia, "Times New Roman", Times, serif;
 font-size: 100%;
 line-height: normal;
-background-image:url(../IMG/background02.jpg)
+background-color:#CCC;
 }
 background {
 background-color:#999;
@@ -77,7 +77,7 @@ font-family:"Comic Sans MS", cursive;
 }
 img {
 border:solid;
-margin:3px;
+margin:1px;
 padding:1px;
 }
 #errMsg {
@@ -87,10 +87,11 @@ font-weight: bold;
 padding: 10px
 }
 fieldset { 
-border:solid #009;
+border:hidden;
 alignment-adjust:central;
 margin:left;
 padding:0px 0px 0px 0px;
+display:block;
 }
 legend {
 padding: 0.2em 0.5em;
@@ -102,4 +103,5 @@ text-align: center;
 h1, h2, h3, h4, h5, h6, div, ul {
 margin: 0px;
 padding: 0px;
+text-align:center;
 }

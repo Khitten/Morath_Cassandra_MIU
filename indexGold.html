@@ -46,10 +46,8 @@
                 	data-iconpos="right">Pet Names</a></p>
                  <p><a href="#breeds" data-role="button" data-icon="arrow-r" 
                 	data-iconpos="right">Breeds</a></p>
-                 <p><a href="#males" data-role="button" data-icon="arrow-r" 
-                	data-iconpos="right">Male Pets</a></p>	
-                 <p><a href="#females" data-role="button" data-icon="arrow-r" 
-                	data-iconpos="right">Female Pets</a></p>
+                 <p><a href="#calendar" data-role="button" data-icon="arrow-r" 
+                	data-iconpos="right">Schedule</a></p>	
                  </div>			
      		</div>
             	<div data-role="footer" data-position="fixed" data-theme="d">
@@ -71,7 +69,7 @@
 				 <div data-role="content">
                   	<p>There will be a link to all owners here</p>
                   </div>
-				  <div data-role="footer" data-position="fixed" data-theme="c">
+				  <div data-role="footer" data-position="fixed" data-id="info" data-theme="c">
                      <div data-role="navbar">
                      	<ul>
                         	<li><a href="#request" data-icon="star">Request</a></li>
@@ -89,7 +87,7 @@
 				 <div data-role="content">
                   	<p>There will be a link to all pets here</p>
                   </div>
-				  <div data-role="footer" data-position="fixed" data-theme="c">
+				  <div data-role="footer" data-position="fixed" data-id="info" data-theme="c">
                      <div data-role="navbar">
                      	<ul>
                         	<li><a href="#request" data-icon="star">Request</a></li>
@@ -102,12 +100,32 @@
            <!--Breed Page-->
                 <div data-role="page" id="breeds" data-add-back-btn="true">
 				<div data-role="header" data-position="fixed" data-theme="c">
-                     <h1>Breed</h1>
+                     <h1>Breeds</h1>
+                     <b>External links</b>
                  </div>
 				 <div data-role="content">
-                  	<p>There will be breeds here</p>
+                 <ul data-role="listview">
+                 	<li>
+                    	<a href="http://www.akc.org/breeds/complete_breed_list.cfm">
+                        	<img src="IMG/AKC.jpg" />
+                  	<h3>AKC Breeds</h3>
+                    </a>
+                    </li>
+                 	<li>
+                    	<a href="http://www.cfainc.org/Breeds.aspx">
+                        	<img src="IMG/CFATN.jpg" />
+                  	<h3>CFA Breeds</h3>
+                    </a>
+                    </li>
+                 	<li>
+                    	<a href="http://animal.discovery.com/tv-shows/dogs-101/videos/designer-dogs.htm">
+                        	<img src="IMG/APTN.jpg" />
+                  	<h3>AP "Designer" Breeds</h3>
+                    </a>
+                    </li>
+                  </ul>
                   </div>
-				  <div data-role="footer" data-position="fixed" data-theme="c">
+				  <div data-role="footer" data-position="fixed" data-id="info" data-theme="c">
                      <div data-role="navbar">
                      	<ul>
                         	<li><a href="#request" data-icon="star">Request</a></li>
@@ -117,33 +135,15 @@
                     </div>
                    </div>
 				</div>
-            <!--Male Pets-->
-                <div data-role="page" id="males" data-add-back-btn="true">
+            <!--Calendar-->
+                <div data-role="page" id="calendar" data-add-back-btn="true">
 				<div data-role="header" data-position="fixed" data-theme="c">
-                     <h1>Male Pets</h1>
+                     <h1>Schedule/Calendar</h1>
                  </div>
 				 <div data-role="content">
-                  	<p>There will be a link to all male pets here</p>
+                  	<p>There will be a link to a schedule</p>
                   </div>
-				  <div data-role="footer" data-position="fixed" data-theme="c">
-                     <div data-role="navbar">
-                     	<ul>
-                        	<li><a href="#request" data-icon="star">Request</a></li>
-                            <li><a href="#favorite" data-icon="check">Favorite</a></li>
-                            <li><a href="#edit" data-icon="edit">Edit</a></li>
-                      </ul>
-                    </div>
-                   </div>
-				</div>
-           <!--Female Pets-->
-                <div data-role="page" id="females" data-add-back-btn="true">
-				<div data-role="header" data-position="fixed" data-theme="c">
-                     <h1>Female Pets</h1>
-                 </div>
-				 <div data-role="content">
-                  	<p>There will be a link to all Female pets here</p>
-                  </div>
-				  <div data-role="footer" data-position="fixed" data-theme="c">
+				  <div data-role="footer" data-position="fixed" data-id="info" data-theme="c">
                      <div data-role="navbar">
                      	<ul>
                         	<li><a href="#request" data-icon="star">Request</a></li>
