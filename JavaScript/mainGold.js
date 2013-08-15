@@ -1,7 +1,7 @@
 // JavaScript Document
 //Cassandra Morath
-//VFW Project 2 1307
-//Jan 8, 2013
+//MiU 1308
+//August 14, 2013
 window.addEventListener("DOMContentLoaded", function(){
 //Get elementById function
 	function $(x){
