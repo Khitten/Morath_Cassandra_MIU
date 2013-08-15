@@ -20,7 +20,7 @@
    	</head>
 	<body> <!--Users will see the content in the body tag--> 
     	<div data-role="page" id="home">
-        	<div data-role="header" data-position="fixed">
+        	<div data-role="header" data-position="fixed" data-theme="d">
             	<h1>Groomer's PetFolio</h1>
                 	<form action="#" methods="post">
 						<div id="Fluffy"><a href="pageAddItemGold.html">
@@ -41,7 +41,15 @@
             <div data-role="content">
         		<li>Or Browse By:</li>
                 <p><a href="#owners" data-role="button" data-icon="arrow-r" 
-                	data-iconpos="right">Owners Name</a></p>	
+                	data-iconpos="right">Owner Names</a></p>
+                 <p><a href="#pets" data-role="button" data-icon="arrow-r" 
+                	data-iconpos="right">Pet Names</a></p>
+                 <p><a href="#breeds" data-role="button" data-icon="arrow-r" 
+                	data-iconpos="right">Breeds</a></p>
+                 <p><a href="#males" data-role="button" data-icon="arrow-r" 
+                	data-iconpos="right">Male Pets</a></p>	
+                 <p><a href="#females" data-role="button" data-icon="arrow-r" 
+                	data-iconpos="right">Female Pets</a></p>			
     		</div>
       </div>
             <div data-role="footer" data-position="fixed">
@@ -59,7 +67,50 @@
                      <h4>link to about page</h4>
                    </div>
 				</div>
-                
+                <div data-role="page" id="pets" data-add-back-btn="true">
+				<div data-role="header" data-position="fixed">
+                     <h1>Pets</h1>
+                 </div>
+				 <div data-role="content">
+                  	<p>There will be a link to all pets here</p>
+                  </div>
+				  <div data-role="footer" data-position="fixed">
+                     <h4>link to about page</h4>
+                   </div>
+				</div>
+                <div data-role="page" id="breeds" data-add-back-btn="true">
+				<div data-role="header" data-position="fixed">
+                     <h1>Breed</h1>
+                 </div>
+				 <div data-role="content">
+                  	<p>There will be breeds here</p>
+                  </div>
+				  <div data-role="footer" data-position="fixed">
+                     <h4>link to about page</h4>
+                   </div>
+				</div>
+                <div data-role="page" id="males" data-add-back-btn="true">
+				<div data-role="header" data-position="fixed">
+                     <h1>Male Pets</h1>
+                 </div>
+				 <div data-role="content">
+                  	<p>There will be a link to all male pets here</p>
+                  </div>
+				  <div data-role="footer" data-position="fixed">
+                     <h4>link to about page</h4>
+                   </div>
+				</div>
+                <div data-role="page" id="Females" data-add-back-btn="true">
+				<div data-role="header" data-position="fixed">
+                     <h1>Female Pets</h1>
+                 </div>
+				 <div data-role="content">
+                  	<p>There will be a link to all Female pets here</p>
+                  </div>
+				  <div data-role="footer" data-position="fixed">
+                     <h4>link to about page</h4>
+                   </div>
+				</div>
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
     <script src="JavaScript/mainGold.js"></script> 
