@@ -20,7 +20,8 @@ padding: 2px 2px 2px 2px;
 font-family: Georgia, "Times New Roman", Times, serif;
 font-size: 100%;
 line-height: normal;
-color:#FFC;
+color:#06C;
+background-image:url(../IMG/background02.jpg)
 }
 background {
 background-color:#999;
