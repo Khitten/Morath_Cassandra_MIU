@@ -54,14 +54,56 @@
                      <h4>Learn More About</h4>
                      <div data-role="navbar">
                      	<ul>
-                            <li><a href="#company" data-icon="star">Our Company</a></li>
-                            <li><a href="#grooming" data-icon="check">Grooming</a></li>
-                            <li><a href="#breeds" data-icon="edit">Breeds</a></li>
-                        </ul>
-                      </div>
-                 </div>
+                            <li><a href="#companyInfo" data-icon="star">Our Company</a></li>
+                            <li><a href="#groomingInfo" data-icon="check">Grooming</a></li>
+                            <li><a href="#breedInfo" data-icon="info">Breeds</a></li>
+                         </ul>
+                   </div>
+                </div>         
        		</div>
-       <!--Owner page-->
+        <!--Company Info Page-->
+        <div data-role="page" id="companyInfo" data-add-back-btn="true">
+			<div data-role="header">...</div>
+			<div data-role="content">...</div>
+			<div data-role="footer">...</div>
+		</div>
+        <!--Grooming Info Page-->
+        <div data-role="page" id="groomingInfo"data-add-back-btn="true">
+			<div data-role="header">...</div>
+			<div data-role="content">...</div>
+			<div data-role="footer">...</div>
+		</div>
+       	<!--Breed Info Page-->
+           <div data-role="page" id="breedInfo" data-add-back-btn="true">
+				<div data-role="header" data-position="fixed" data-theme="c">
+                	<h1>External links</h1>
+                </div>
+				<div data-role="content">
+                <ul data-role="listview">
+                 	<li>
+                    	<a href="http://www.akc.org/breeds/complete_breed_list.cfm">
+                        	<img src="IMG/AKC.jpg" />
+                  	<h3>AKC Breeds</h3>
+                    </a>
+                    </li>
+                 	<li>
+                    	<a href="http://www.cfainc.org/Breeds.aspx">
+                        	<img src="IMG/CFATN.jpg" />
+                  	<h3>CFA Breeds</h3>
+                    </a>
+                    </li>
+                 	<li>
+                    	<a href="http://animal.discovery.com/tv-shows/dogs-101/videos/designer-dogs.htm">
+                        	<img src="IMG/APTN.jpg" />
+                  	<h3>AP "Designer" Breeds</h3>
+                    </a>
+                    </li>
+                  </ul>
+                </div>
+				<div data-role="footer" data-position="fixed" data-id="info" data-theme="c">...</div>
+		   </div>
+
+       	<!--Owner page-->
        		<div data-role="page" id="owners" data-add-back-btn="true">
 				<div data-role="header" data-position="fixed" data-theme="c">
                      <h1>Owners</h1>
@@ -101,29 +143,10 @@
                 <div data-role="page" id="breeds" data-add-back-btn="true">
 				<div data-role="header" data-position="fixed" data-theme="c">
                      <h1>Breeds</h1>
-                     <b>External links</b>
+                     <b>Browse by Breed</b>
                  </div>
 				 <div data-role="content">
-                 <ul data-role="listview">
-                 	<li>
-                    	<a href="http://www.akc.org/breeds/complete_breed_list.cfm">
-                        	<img src="IMG/AKC.jpg" />
-                  	<h3>AKC Breeds</h3>
-                    </a>
-                    </li>
-                 	<li>
-                    	<a href="http://www.cfainc.org/Breeds.aspx">
-                        	<img src="IMG/CFATN.jpg" />
-                  	<h3>CFA Breeds</h3>
-                    </a>
-                    </li>
-                 	<li>
-                    	<a href="http://animal.discovery.com/tv-shows/dogs-101/videos/designer-dogs.htm">
-                        	<img src="IMG/APTN.jpg" />
-                  	<h3>AP "Designer" Breeds</h3>
-                    </a>
-                    </li>
-                  </ul>
+                 
                   </div>
 				  <div data-role="footer" data-position="fixed" data-id="info" data-theme="c">
                      <div data-role="navbar">
