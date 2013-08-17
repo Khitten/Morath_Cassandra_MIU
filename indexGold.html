@@ -38,8 +38,8 @@
 		</div>
 		<div>
 			<form>
-				<label for="search-1">Search:</label>
-				<input name="search-1" id="search-1" value="search" type="search">
+				<label for="search-mini">Search Input:</label>
+				<input type="search" name="search-mini" id="search-mini" value="" data-mini="true"/>
 			</form>
 		</div>
 		<div data-role="content">
@@ -231,8 +231,16 @@
 			<h1>Schedule/Calendar</h1>
 		</div>
 		<div data-role="content">
-			<p>There will be a link to a schedule
-			</p>
+			<p>Monthly Schedule</p>
+            <div>
+            	<table border>
+                	<td colspan="7">
+                    	<td align="center">DAY
+                        <tr>Sunday</tr>
+                        <tr>Monday</tr></td>
+                    </td>
+                </table>
+             </div>
 		</div>
 		<div data-role="footer" data-position="fixed" data-id="info" data-theme="c">
 			<div data-role="navbar">
