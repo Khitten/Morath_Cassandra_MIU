@@ -16,7 +16,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="cleartype" content="on">
 	<link rel="stylesheet" data-ajax="false" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css"/>
-	<link href="CSS/styleGold.css" type="text/css" rel="stylesheet" />
+	<link href="CSS/styleGold.css" type="text/css" rel="stylesheet" data-ajax="false"/>
 
 	<!-- This application will give a groomer the ability to keep client information 
         on dogs they groom. (At some point I would like to include before and after pictures 
@@ -27,7 +27,7 @@
 <body>
 	<!--Users will see the content in the body tag-->
 	<div data-role="page" id="home">
-		<div data-role="header" data-position="fixed" data-theme="d">
+		<div data-role="header" data-position="fixed" data-theme="c">
 			<form action="#" methods="post">
 				<div id="Fluffy">
 					<a href="pageAddItemGold.html" data-ajax="false">
@@ -37,24 +37,30 @@
 			</form>
 		</div>
 		<div>
-			<form>
-				<label for="search-mini">Search Input:</label>
-				<input type="search" name="search-mini" id="search-mini" value="" data-mini="true"/>
-			</form>
+        <img src="IMG/black-paws-straight-md.jpg" />
+			<ul data-role="listview" data-filter="true" data-filter-reveal="true" 
+            data-filter-placeholder="Search fruits..." data-inset="true">
+                <li data-role="list-divider" data-autodividers="true">A</li>
+                <li><a href="#">Apple</a></li>
+                <li data-role="list-divider">B</li>
+                <li><a href="#">Banana</a></li>
+                <li data-role="list-divider">C</li>
+                <li><a href="#">Cherry</a></li>
+                <li><a href="#">Cranberry</a></li>
+                <li data-role="list-divider">G</li>
+                <li><a href="#">Grape</a></li>
+                <li><a href="#">Orange</a></li>
+		</ul>
 		</div>
 		<div data-role="content">
 			<li>Or Browse By:
 			</li>
 			<div data-role="controlgroup">
 				<p>
-					<a href="#owners" data-role="button" data-icon="arrow-r" data-iconpos="right">Owner
-											Names
-											</a>
+					<a href="#owners" data-role="button" data-icon="arrow-r" data-iconpos="right">Owner Names</a>
 				</p>
 				<p>
-					<a href="#pets" data-role="button" data-icon="arrow-r" data-iconpos="right">Pet
-											Names
-											</a>
+					<a href="#pets" data-role="button" data-icon="arrow-r" data-iconpos="right">Pet Names</a>
 				</p>
 				<p>
 					<a href="#breeds" data-role="button" data-icon="arrow-r" data-iconpos="right">Breeds</a>
@@ -64,14 +70,12 @@
 				</p>
 			</div>
 		</div>
-		<div data-role="footer" data-position="fixed" data-theme="d">
+		<div data-role="footer" data-position="fixed" data-theme="c">
 			<h4>Learn More About</h4>
 			<div data-role="navbar">
 				<ul>
 					<li>
-						<a href="#companyInfo" data-icon="star">Our
-														Company
-														</a>
+						<a href="#companyInfo" data-icon="star">Our Company</a>
 					</li>
 					<li>
 						<a href="#groomingInfo" data-icon="check">Grooming</a>
@@ -83,11 +87,28 @@
 			</div>
 		</div>
 	</div>
+    <!--link to pet info-->
+    
 	<!--Company Info Page-->
 	<div data-role="page" id="companyInfo" data-add-back-btn="true">
-		<div data-role="header">...</div>
+		<div data-role="header" data-position="fixed" data-theme="c"></div>
+        	<h1>About our Company</h1>
 		<div data-role="content">...</div>
-		<div data-role="footer">...</div>
+		<div data-role="footer" data-position="fixed" data-theme="c">
+        	<div data-role="navbar">
+				<ul>
+					<li>
+						<a href="#request" data-icon="star">Request</a>
+					</li>
+					<li>
+						<a href="#favorite" data-icon="check">Favorite</a>
+					</li>
+					<li>
+						<a href="#edit" data-icon="edit">Edit</a>
+					</li>
+				</ul>
+			</div>
+        </div>
 	</div>
 	<!--Grooming Info Page-->
 	<div data-role="page" id="groomingInfo" data-add-back-btn="true">
@@ -118,7 +139,21 @@
 				</div>
 			</div>
 		</div>
-		<div data-role="footer">...</div>
+		<div data-role="footer" data-position="fixed" data-theme="c">
+        	<div data-role="navbar">
+				<ul>
+					<li>
+						<a href="#request" data-icon="star">Request</a>
+					</li>
+					<li>
+						<a href="#favorite" data-icon="check">Favorite</a>
+					</li>
+					<li>
+						<a href="#edit" data-icon="edit">Edit</a>
+					</li>
+				</ul>
+			</div>
+        </div>
 	</div>
 	<!--Breed Info Page-->
 	<div data-role="page" id="breedInfo" data-add-back-btn="true">
@@ -147,7 +182,21 @@
 				</li>
 			</ul>
 		</div>
-		<div data-role="footer" data-position="fixed" data-id="info" data-theme="c">...</div>
+		<div data-role="footer" data-position="fixed" data-id="info" data-theme="c">
+        	<div data-role="navbar">
+				<ul>
+					<li>
+						<a href="#request" data-icon="star">Request</a>
+					</li>
+					<li>
+						<a href="#favorite" data-icon="check">Favorite</a>
+					</li>
+					<li>
+						<a href="#edit" data-icon="edit">Edit</a>
+					</li>
+				</ul>
+			</div>
+        </div>
 	</div>
 
 	<!--Owner page-->
@@ -232,15 +281,6 @@
 		</div>
 		<div data-role="content">
 			<p>Monthly Schedule</p>
-            <div>
-            	<table border>
-                	<td colspan="7">
-                    	<td align="center">DAY
-                        <tr>Sunday</tr>
-                        <tr>Monday</tr></td>
-                    </td>
-                </table>
-             </div>
 		</div>
 		<div data-role="footer" data-position="fixed" data-id="info" data-theme="c">
 			<div data-role="navbar">
@@ -263,6 +303,7 @@
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
 <script src="JavaScript/mainGold.js"></script>
+<!--<script src="JavaScript/fullcalendar.js"></script>-->
 </body>
 
 </html>
