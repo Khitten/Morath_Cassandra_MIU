@@ -76,9 +76,9 @@ margin-left:center;
 font-family:"Comic Sans MS", cursive;
 }
 img {
-border:solid;
-margin:1px;
-padding:1px;
+border:none;
+margin:5px;
+padding:0px;
 }
 #errMsg {
 background: #ff0000;
@@ -100,8 +100,22 @@ color: #333;
 font-size: 90%;
 text-align: center;
 }
-h1, h2, h3, h4, h5, h6, div, ul {
+h1, h2, h3, h4, h5, h6, 
+
+div{
 margin: 0px;
 padding: 0px;
 text-align:center;
+}
+
+ul {
+margin: 0px;
+padding: 0px;
+text-align:center;
+}
+/*-15px in JQM is hi-jacking the search button making it overlap. Need custom css to correct.*/
+#login1 {
+margin: 5px 0px 10px 0px;
+text-align:center;
+float:right;
 }
