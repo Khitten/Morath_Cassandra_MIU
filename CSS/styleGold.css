@@ -100,7 +100,11 @@ color: #333;
 font-size: 90%;
 text-align: center;
 }
-h1, h2, h3, h4, h5, h6, 
+h1{
+font-size:24px;
+}
+
+h2, h3, h4, h5, h6, 
 
 div{
 margin: 0px;
@@ -115,7 +119,7 @@ text-align:center;
 }
 /*-15px in JQM is hi-jacking the search button making it overlap. Need custom css to correct.*/
 #login1 {
-margin: 5px 0px 10px 0px;
+margin: 6px 0px 12px 0px;
 text-align:center;
 float:right;
 }
