@@ -151,10 +151,11 @@
 	</div>
     <!--link to login form-->
     <div data-role="page" id="login1" data-add-back-btn="true">
-		<div data-role="header" data-position="fixed" data-theme="c"></div>
+		<div data-role="header" data-position="fixed" data-theme="c">
         	<h1>Register</h1>
+       	</div>
 		<div data-role="content">
-        	<form method="get" acttion="">
+        	<form method="get" action="">
                 <fieldset data-role="fieldcontain">
                     	<label for="basic">First Name:</label>
                         <input type="text" name="name" id="name1" value="First name: " />
@@ -164,8 +165,8 @@
                         <input type="text" name="address" id="address1" value="Your Address" />
                         <label for="email">Your email:</label>
                         <input type="email" name="email" id="email" value="email: " />
-                        <label for="number">Phone Number</label>
-                        <input type="number" name="phone" id="number" value="Phone Number" />
+                        <label for="tel">Phone Number:</label>
+						<input name="tel" id="tel" value="" type="tel">
                     </fieldset>
             </form> 
         </div>
@@ -184,12 +185,12 @@
 				</ul>
 			</div>
         </div>
-	</div>
-    
+	</div> 
 	<!--Company Info Page-->
 	<div data-role="page" id="companyInfo" data-add-back-btn="true">
-		<div data-role="header" data-position="fixed" data-theme="c"></div>
+		<div data-role="header" data-position="fixed" data-theme="c">
         	<h1>About our Company</h1>
+        </div>
 		<div data-role="content">
         	<h4>Cassandra Morath</h4>
             	<p>MiU 1308</p>
