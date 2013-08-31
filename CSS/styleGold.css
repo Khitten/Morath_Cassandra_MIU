@@ -119,7 +119,7 @@ text-align:center;
 }
 /*-15px in JQM is hi-jacking the search button making it overlap. Need custom css to correct.*/
 #login1 {
-margin: 6px 0px 12px 0px;
+margin: 6px 1.5px 1px 1.5px;
 text-align:center;
 float:right;
 }
