@@ -15,8 +15,8 @@
 	<meta name="MobileOptimized" content="320">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="cleartype" content="on">
-	<link rel="stylesheet" data-ajax="false" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css"/>
-	<link href="CSS/styleGold.css" type="text/css" rel="stylesheet" data-ajax="false"/>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css"/>
+	<link href="CSS/styleGold.css" type="text/css" rel="stylesheet"/>
 
 	<!-- This application will give a groomer the ability to keep client information 
         on dogs they groom. (At some point I would like to include before and after pictures 
@@ -32,22 +32,23 @@
 				<div id="Fluffy">
 					<a href="pageAddItemGold.html" data-ajax="false">
 						<img src="IMG/Cute-Dogs-Beauty-Salon.jpg" alt="IMG/Cute-Dogs-Beauty-Salon.jpg" width="290em" height="130em">
-                        
-					</a>
+                    </a>
 				</div>
 			</form>
 		</div> 
      <form method="get" action="">
 		<div>
-        	<div> 
+        	<div>
+            <fieldset> 
             	<div data-role="fieldcontain" class="iu-hide-label">
-                    <nav>
-                        <img src="IMG/black-paws-straight-md.jpg" />
+                  
                         <a href="#login1" id="login1" data-role="button" data-mini="true" data-inline="true" 
                         data-icon="check" data-theme="b">Login or Register</a>
-                    </nav>
-            </div>
+                    
+                </div>
+            </fieldset>
          </div>
+         <div data-role="fieldcontain">
 			<ul data-role="listview" data-filter="true" data-filter-reveal="true" 
             data-filter-placeholder="Search" data-inset="true" id="search1">
                 <li data-role="list-divider" data-autodividers="true">A</li>
@@ -117,7 +118,9 @@
                 <li data-role="list-divider">Z</li>
                 <li><a href="#">Zeus</a></li>
              </ul>
+             
 		</div>
+        </div>
      </form>
 		<div data-role="content">
         <form method="get" action="">
@@ -125,16 +128,19 @@
 			<li>Or Browse By:</li>
 			<div data-role="controlgroup">
 				<p>
-					<a href="#owners" data-role="button" data-icon="arrow-r" data-iconpos="right">Owner Names</a>
+					<a href="#owners" data-role="button" data-icon="arrow-r" data-iconpos="right">Owner Name</a>
 				</p>
 				<p>
-					<a href="#pets" data-role="button" data-icon="arrow-r" data-iconpos="right">Pet Names</a>
+					<a href="#pets" data-role="button" data-icon="arrow-r" data-iconpos="right">Pet Name</a>
 				</p>
 				<p>
 					<a href="#breeds" data-role="button" data-icon="arrow-r" data-iconpos="right">Breeds</a>
 				</p>
 				<p>
 					<a href="#calendar" data-role="button" data-icon="arrow-r" data-iconpos="right">Schedule</a>
+				</p>
+                <p>
+					<a href="#style" data-role="button" data-icon="arrow-r" data-iconpos="right">Style</a>
 				</p>
 			</div>
             </div>
