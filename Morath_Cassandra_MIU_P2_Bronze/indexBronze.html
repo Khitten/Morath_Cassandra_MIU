@@ -1,86 +1,483 @@
 <!DOCTYPE html>
 <!-- Cassandra Morath -->
-<!-- GIU  1308-->
-<!-- Project 2 -->
-<!-- -->
+<!-- GIU 1309-->
+<!-- Project 1 -->
+<!--https://github.com/Khitten/Morath_Cassandra_MIU-->
+
 <html>
 
 <head>
-	<!-- -->
-	<!-- meta content. -->
-	<meta charset="UTF-8" />
-	<meta name="description" content="A portfolio for groomers.">
-	<meta name="keywords" content="groomer, portfolio, grooming, dog">
-	<meta name="robots" content="index, follow">
-	<meta name="HandheldFriendly" content="True">
-	<meta name="MobileOptimized" content="320">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="cleartype" content="on">
-	<link rel="stylesheet" data-ajax="false" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css"/>
-	<link href="CSS/styleBronze.css" type="text/css" rel="external">
+    <!-- meta content. -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="A portfolio for groomers.">
+    <meta name="keywords" content="groomer, portfolio, grooming, dog">
+    <meta name="robots" content="index, follow">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cleartype" content="on">
+    <link rel="stylesheet" href="CSS/PetTheme.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+    <link href="CSS/styleBronze.css" type="text/css" rel="stylesheet" />
 
-	<!-- This application will give a groomer the ability to keep client information on dogs they groom. (At some point I would like to include before and after pictures and more detailed information about the client) -->
-	<title>PetFolio</title>
+    <!-- This application will give a groomer the ability to keep client information 
+        on dogs they groom. (At some point I would like to include before and after pictures 
+        and more detailed information about the client) -->
+    <title>PetFolio</title>
 </head>
 
 <body>
-	<!--Users will see the content in the body tag-->
-	<div data-role="page">
-		<div data-role="header">
-			<h1>Groomer's PetFolio</h1>
-			<form action="#" methods="post">
-				<div id="Fluffy">
-					<a href="pageAddItemGold.html">
-						<img src="IMG/CTA_Fluffy.jpg" alt="IMG/CTA_Fluffy.jpg" width="290em">
-					</a>
-				</div>
-			</form>
-		</div>
-		<div>
-			<!-- HTML for SEARCH BAR -->
-			<div id="tfheader">
-				<form id="tfnewsearch" method="get" action="pageAddItemBronze.html" data-ajax="false">
-					<input type="text" class="tftextinput" name="q" size="21" maxlength="120">
-					<input type="submit" value="Search" class="tfbutton">
-				</form>
-				<div class="tfclear"></div>
-			</div>
-			<ul>
-				<li>Or Browse By</li>
-				<div id="ONameButton">
-					<a href="pageAddItemBronze.html">
-						<img src="IMG/ONameButton.jpg" alt="IMG/ONameButton.jpg" width="290em">
-					</a>
-				</div>
-				<div id="PNameButton">
-					<a href="pageAddItemBronze.html">
-						<img src="IMG/PNameButton.jpg" alt="IMG/PNameButton.jpg" width="290em">
-					</a>
-				</div>
-				<div id="BreedButton">
-					<a href="pageAddItemBronze.html">
-						<img src="IMG/BreedButton.jpg" alt="IMG/BreedButton.jpg" width="290em">
-					</a>
-				</div>
-				<div id="MaleButton">
-					<a href="pageAddItemBronze.html">
-						<img src="IMG/MaleButton.jpg" alt="IMG/MaleButton.jpg" width="290em">
-					</a>
-				</div>
-				<div id="ONameButton">
-					<a href="pageAddItemBronze.html">
-						<img src="IMG/FemaleButton.jpg" alt="IMG/FemaleButton.jpg" width="290em">
-					</a>
-				</div>
-			</ul>
-		</div>
-		<div data-role="footer" data-position="fixed">
-			<h4>PetFolio</h4>
-		</div>
-	</div>
-	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>-->
-	<script src="JavaScript/mainBronze.js"></script>
+    <!--Call to action-->
+    <div data-role="page" id="home">
+        <div data-role="header" data-position="fixed" data-theme="c">
+        	<b>Grooming PetFolio</b>
+        <div data-role="fieldcontain" class="iu-hide-label" data-inline="true" data-mini="true">
+        <form action="#" method="post">
+        <h6><a href="#signin" id="signin" data-role="navbar" data-icon="check" data-theme="b" >Sign In</a>
+        <span>or</span>
+    	<a href="#register1" id="register1" data-role="navbar" data-icon="check" data-theme="b">Register Now!</a></h6>
+	</form>
+    </div>
+        
+        </div>
+        <div id="Fluffy">
+            <a href="pageAddItemBronze.html" data-ajax="false">
+                <img src="IMG/Cute-Dogs-Beauty-Salon.jpg" alt="IMG/Cute-Dogs-Beauty-Salon.jpg" width="290em" height="130em">
+             </a>
+         </div>
+        <form method="get" action="">
+            <div>
+                <div>
+                    
+                </div>
+                <div data-role="fieldcontain">
+                    <ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search" data-inset="true"
+                    id="search1">
+                        <li data-role="list-divider" data-autodividers="true">A</li>
+                        <li><a href="#">Alex</a></li>
+                        <li data-role="list-divider">B</li>
+                        <li><a href="#">Bob</a></li>
+                        <li data-role="list-divider">C</li>
+                        <li><a href="#">Cass</a></li>
+                        <li><a href="#">Cranberry</a></li>
+                        <li data-role="list-divider">D</li>
+                        <li><a href="#">Cranberry</a></li>
+                        <li data-role="list-divider">E</li>
+                        <li><a href="#">Elphie</a></li>
+                        <li data-role="list-divider">F</li>
+                        <li><a href="#">Frankie</a></li>
+                        <li data-role="list-divider">G</li>
+                        <li><a href="#">George</a></li>
+                        <li><a href="#">Gus</a></li>
+                        <li data-role="list-divider">H</li>
+                        <li><a href="#">Hank</a></li>
+                        <li><a href="#">Henry</a></li>
+                        <li data-role="list-divider">I</li>
+                        <li><a href="#">Isabel</a></li>
+                        <li><a href="#">Isis</a></li>
+                        <li data-role="list-divider">J</li>
+                        <li><a href="#">Juicy</a></li>
+                        <li data-role="list-divider">K</li>
+                        <li><a href="#">Karen</a></li>
+                        <li><a href="#">Kipper</a></li>
+                        <li data-role="list-divider">L</li>
+                        <li><a href="#">Lem</a></li>
+                        <li><a href="#">Lacy</a></li>
+                        <li data-role="list-divider">M</li>
+                        <li><a href="#">Major</a></li>
+                        <li><a href="#">May</a></li>
+                        <li data-role="list-divider">N</li>
+                        <li><a href="#">Nana</a></li>
+                        <li><a href="#">North</a></li>
+                        <li data-role="list-divider">O</li>
+                        <li><a href="#">Olsen</a></li>
+                        <li><a href="#">Owen</a></li>
+                        <li data-role="list-divider">P</li>
+                        <li><a href="#">Prissy</a></li>
+                        <li><a href="#">Pop</a></li>
+                        <li data-role="list-divider">Q</li>
+                        <li><a href="#">Que</a></li>
+                        <li><a href="#">Quint</a></li>
+                        <li data-role="list-divider">R</li>
+                        <li><a href="#">Rock</a></li>
+                        <li><a href="#">Russ</a></li>
+                        <li data-role="list-divider">S</li>
+                        <li><a href="#">Sissy</a></li>
+                        <li><a href="#">Steve</a></li>
+                        <li data-role="list-divider">T</li>
+                        <li><a href="#">Tango</a></li>
+                        <li><a href="#">Tugger</a></li>
+                        <li data-role="list-divider">U</li>
+                        <li><a href="#">Ubu</a></li>
+                        <li data-role="list-divider">V</li>
+                        <li><a href="#">Victor</a></li>
+                        <li data-role="list-divider">W</li>
+                        <li><a href="#">Windy</a></li>
+                        <li data-role="list-divider">X</li>
+                        <li><a href="#">Xena</a></li>
+                        <li data-role="list-divider">Y</li>
+                        <li><a href="#">Yaya</a></li>
+                        <li data-role="list-divider">Z</li>
+                        <li><a href="#">Zeus</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </form>
+        <div data-role="content">
+            <form method="get" action="">
+                <div data-role="fieldcontain" class="iu-hide-label">
+                    <li>Or Browse By:</li>
+                    <div data-role="controlgroup">
+                        <p>
+                            <a href="#owners" data-role="button" data-icon="arrow-r" data-iconpos="right">Owner Name</a>
+                        </p>
+                        <p>
+                            <a href="#pets" data-role="button" data-icon="arrow-r" data-iconpos="right">Pet Name</a>
+                        </p>
+                        <p>
+                            <a href="#breeds" data-role="button" data-icon="arrow-r" data-iconpos="right">Breeds</a>
+                        </p>
+                        <p>
+                            <a href="#calendar" data-role="button" data-icon="arrow-r" data-iconpos="right">Schedule</a>
+                        </p>
+                        <p>
+                            <a href="#style" data-role="button" data-icon="arrow-r" data-iconpos="right">Style</a>
+                        </p>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div data-role="footer" class="ui-bar" data-position="fixed" data-theme="c">
+            <h6>Learn More About</h6>
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#companyInfo" data-icon="star">Our Company</a>
+                    </li>
+                    <li>
+                        <a href="#groomingInfo" data-icon="check">Grooming</a>
+                    </li>
+                    <li>
+                        <a href="#breedInfo" data-icon="info">Breeds</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Login Page-->
+    <div data-role="page" id="signin" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed" data-theme="c">
+            <h1>Login</h1>
+        </div>
+        <div data-role="content">
+            <form method="get" action="">
+                <fieldset data-role="fieldcontain">
+                    <label for="basic">User Name:</label>
+                    <input type="text" name="name" id="username1" value="User name: " />
+                    <label for="basic">Password:</label>
+                    <input type="text" name="name" id="password2" value="Password: " />
+                </fieldset>
+            </form>
+        </div>
+        <div data-role="footer" class="ui-bar" data-position="fixed" data-theme="c">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="" data-icon="star">Clear</a>
+                    </li>
+                    <li>
+                        <a href="" data-icon="check">Submit</a>
+                    </li>
+                    <li>
+                        <a href="" data-icon="edit">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Register Page-->
+    <div data-role="page" id="register1" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed" data-theme="c">
+            <h1>Register</h1>
+        </div>
+        <div data-role="content">
+            <form method="get" action="">
+                <fieldset data-role="fieldcontain">
+                    <label for="basic">First Name:</label>
+                    <input type="text" name="name" id="name1" value="First name: " />
+                    <label for="basic">Last Name:</label>
+                    <input type="text" name="name" id="name2" value="Last name: " />
+                    <label for="address">Your Address:</label>
+                    <input type="text" name="address" id="address1" value="Address" />
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" value="email: " />
+                    <label for="tel">Phone Number:</label>
+                    <input name="tel" id="tel" value="555-123-4567" type="tel">
+                </fieldset>
+            </form>
+        </div>
+        <div data-role="footer" class="ui-bar" data-position="fixed" data-theme="c">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="" data-icon="star">Clear</a>
+                    </li>
+                    <li>
+                        <a href="" data-icon="check">Submit</a>
+                    </li>
+                    <li>
+                        <a href="" data-icon="edit">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Company Info Page-->
+    <div data-role="page" id="companyInfo" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed" data-theme="c">
+            <h1>About our Company</h1>
+        </div>
+        <div data-role="content">
+            <h4>Cassandra Morath</h4>
+            <p>MiU 1308</p>
+            <p>
+                <time>2013-08-17</time>
+            </p>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="c">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#request" data-icon="star">Request</a>
+                    </li>
+                    <li>
+                        <a href="#favorite" data-icon="check">Favorite</a>
+                    </li>
+                    <li>
+                        <a href="#edit" data-icon="edit">Edit</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Grooming Info Page-->
+    <div data-role="page" id="groomingInfo" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed" data-theme="c">
+            <h1>General Grooming Info</h1>
+        </div>
+        <div data-role="content">
+            <div data-role="collapsible-set">
+                <div data-role="collapsible" data-collapsed="true" data-theme="c">
+                    <h3>"Teddy" clip</h3>
+                    <p>information here
+                    </p>
+                </div>
+                <div data-role="collapsible" data-collapsed="true" data-theme="c">
+                    <h3>Shave down</h3>
+                    <p>information here
+                    </p>
+                </div>
+                <div data-role="collapsible" data-collapsed="true" data-theme="c">
+                    <h3>Poodle clip</h3>
+                    <p>information here
+                    </p>
+                </div>
+                <div data-role="collapsible" data-collapsed="true" data-theme="c">
+                    <h3>"Lion" clip</h3>
+                    <p>information here
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="c">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#request" data-icon="star">Request</a>
+                    </li>
+                    <li>
+                        <a href="#favorite" data-icon="check">Favorite</a>
+                    </li>
+                    <li>
+                        <a href="#edit" data-icon="edit">Edit</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Breed Info Page-->
+    <div data-role="page" id="breedInfo" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed" data-theme="c">
+            <h1>External links</h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview">
+                <li>
+                    <a href="http://www.akc.org/breeds/complete_breed_list.cfm">
+                        <img src="IMG/AKC.jpg" />
+                        <h3>AKC Breeds</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.cfainc.org/Breeds.aspx">
+                        <img src="IMG/CFATN.jpg" />
+                        <h3>CFA Breeds</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://animal.discovery.com/tv-shows/dogs-101/videos/designer-dogs.htm">
+                        <img src="IMG/APTN.jpg" />
+                        <h3>AP "Designer" Breeds</h3>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-id="info" data-theme="c">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#request" data-icon="star">Request</a>
+                    </li>
+                    <li>
+                        <a href="#favorite" data-icon="check">Favorite</a>
+                    </li>
+                    <li>
+                        <a href="#edit" data-icon="edit">Edit</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--Owner page-->
+    <div data-role="page" id="owners" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed" data-theme="c">
+            <h1>Owners</h1>
+        </div>
+        <div data-role="content">
+            <p>There will be a link to all owners here
+            </p>
+        </div>
+        <div data-role="footer" data-position="fixed" data-id="info" data-theme="c">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#request" data-icon="star">Request</a>
+                    </li>
+                    <li>
+                        <a href="#favorite" data-icon="check">Favorite</a>
+                    </li>
+                    <li>
+                        <a href="#edit" data-icon="edit">Edit</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Pet Name page-->
+    <div data-role="page" id="pets" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed" data-theme="c">
+            <h1>Pets</h1>
+        </div>
+        <div data-role="content">
+            <p>There will be a link to all pets here
+            </p>
+        </div>
+        <div data-role="footer" data-position="fixed" data-id="info" data-theme="c">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#request" data-icon="star">Request</a>
+                    </li>
+                    <li>
+                        <a href="#favorite" data-icon="check">Favorite</a>
+                    </li>
+                    <li>
+                        <a href="#edit" data-icon="edit">Edit</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Breed Page-->
+    <div data-role="page" id="breeds" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed" data-theme="c">
+            <h1>Breeds</h1>
+            <b>Browse by Breed</b>
+        </div>
+        <div data-role="content">
+
+        </div>
+        <div data-role="footer" data-position="fixed" data-id="info" data-theme="c">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#request" data-icon="star">Request</a>
+                    </li>
+                    <li>
+                        <a href="#favorite" data-icon="check">Favorite</a>
+                    </li>
+                    <li>
+                        <a href="#edit" data-icon="edit">Edit</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Calendar-->
+    <div data-role="page" id="calendar" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed" data-theme="c">
+            <h1>Schedule/Calendar</h1>
+        </div>
+        <div data-role="content">
+            <p>Monthly Schedule</p>
+        </div>
+        <div data-role="footer" data-position="fixed" data-id="info" data-theme="c">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#request" data-icon="star">Request</a>
+                    </li>
+                    <li>
+                        <a href="#favorite" data-icon="check">Favorite</a>
+                    </li>
+                    <li>
+                        <a href="#edit" data-icon="edit">Edit</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<div data-role="page" id="style" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed" data-theme="c">
+            <h1>Owners</h1>
+        </div>
+        <div data-role="content">
+            <p>There will be a link to styles here
+            </p>
+        </div>
+        <div data-role="footer" data-position="fixed" data-id="info" data-theme="c">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#request" data-icon="star">Request</a>
+                    </li>
+                    <li>
+                        <a href="#favorite" data-icon="check">Favorite</a>
+                    </li>
+                    <li>
+                        <a href="#edit" data-icon="edit">Edit</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--JS-->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+    <script src="JavaScript/mainBronze.js"></script>
+    <!--<script src="JavaScript/fullcalendar.js"></script>-->
 </body>
 
 </html>
