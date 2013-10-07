@@ -32,14 +32,13 @@
         <div data-role="header" data-position="fixed" data-theme="c">
         	<b>Grooming PetFolio</b>
         <div data-role="fieldcontain" class="iu-hide-label" data-inline="true" data-mini="true">
+        <form action="#" method="post">
         <h6><a href="#signin" id="signin" data-role="navbar" data-icon="check" data-theme="b" >Sign In</a>
         <span>or</span>
     	<a href="#register1" id="register1" data-role="navbar" data-icon="check" data-theme="b">Register Now!</a></h6>
-	</div>
-            <form action="#" method="post">
-            
-               
-            </form>
+	</form>
+    </div>
+        
         </div>
         <div id="Fluffy">
             <a href="pageAddItemGold.html" data-ajax="false">
@@ -166,8 +165,39 @@
             </div>
         </div>
     </div>
-    <!--link to login form-->
-    <div data-role="page" id="login1" data-add-back-btn="true">
+    <!--Login Page-->
+    <div data-role="page" id="signin" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed" data-theme="c">
+            <h1>Login</h1>
+        </div>
+        <div data-role="content">
+            <form method="get" action="">
+                <fieldset data-role="fieldcontain">
+                    <label for="basic">User Name:</label>
+                    <input type="text" name="name" id="username1" value="User name: " />
+                    <label for="basic">Password:</label>
+                    <input type="text" name="name" id="password2" value="Password: " />
+                </fieldset>
+            </form>
+        </div>
+        <div data-role="footer" class="ui-bar" data-position="fixed" data-theme="c">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="" data-icon="star">Clear</a>
+                    </li>
+                    <li>
+                        <a href="" data-icon="check">Submit</a>
+                    </li>
+                    <li>
+                        <a href="" data-icon="edit">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Register Page-->
+    <div data-role="page" id="register1" data-add-back-btn="true">
         <div data-role="header" data-position="fixed" data-theme="c">
             <h1>Register</h1>
         </div>
@@ -419,7 +449,30 @@
             </div>
         </div>
     </div>
-
+<div data-role="page" id="style" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed" data-theme="c">
+            <h1>Owners</h1>
+        </div>
+        <div data-role="content">
+            <p>There will be a link to styles here
+            </p>
+        </div>
+        <div data-role="footer" data-position="fixed" data-id="info" data-theme="c">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#request" data-icon="star">Request</a>
+                    </li>
+                    <li>
+                        <a href="#favorite" data-icon="check">Favorite</a>
+                    </li>
+                    <li>
+                        <a href="#edit" data-icon="edit">Edit</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <!--JS-->
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
