@@ -27,19 +27,59 @@
 </head>
 
 <body>
-    <!--Call to action-->
+    <!--Header-->
     <div data-role="page" id="home">
-        <div data-role="header" data-position="fixed" data-theme="c">
+        <div data-role="header" data-position="fixed" style="overflow:hidden;" data-theme="c">
         	<b>Grooming PetFolio</b>
-        <div data-role="fieldcontain" class="iu-hide-label" data-inline="true" data-mini="true">
-        <form action="#" method="post">
-        <h6><a href="#signin" id="signin" data-role="navbar" data-icon="check" data-theme="b" >Sign In</a>
-        <span>or</span>
-    	<a href="#register1" id="register1" data-role="navbar" data-icon="check" data-theme="b">Register Now!</a></h6>
-	</form>
-    </div>
-        
-        </div>
+         
+         <div data-role="fieldcontain" class="iu-hide-label">
+            <div class="ui-grid-a">
+                <div class="ui-block-a"><a href="#popupLogin" data-rel="popup" data-position-to="window" data-role="button" data-inline="true" data-icon="check" data-theme="a" data-transition="pop">Sign in</a>
+                    <div data-role="popup" id="popupLogin" data-theme="a" class="ui-corner-all">
+                        <form>
+                            <div style="padding:10px 20px;">
+                                <h3>Please sign in</h3>
+                                <label for="un" class="ui-hidden-accessible">Username:</label>
+                                <input name="user" id="un" value="" placeholder="username" data-theme="a" type="text">
+                                <label for="pw" class="ui-hidden-accessible">Password:</label>
+                                <input name="pass" id="pw" value="" placeholder="password" data-theme="a" type="password">
+                                <button type="submit" data-theme="b" data-icon="check">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+                    <div class="ui-block-b"><a href="#popupRegister" data-rel="popup" data-position-to="window" data-role="button" data-inline="true" data-icon="gear" data-theme="a" data-transition="pop">Register</a>
+                    <div data-role="popup" id="popupRegister" data-theme="a" class="ui-corner-all">
+                        <form>
+                            <div style="padding:10px 20px;">
+                                <h3>Please Register</h3>
+                                <label for="un" class="ui-hidden-accessible">Username:</label>
+                                <input name="user" id="un" value="" placeholder="username" data-theme="a" type="text">
+                                <label for="pw" class="ui-hidden-accessible">Password:</label>
+                                <input name="pass" id="pw" value="" placeholder="password" data-theme="a" type="password">
+                                <button type="submit" data-theme="b" data-icon="check">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+		</div>
+            <!--grid view for signin and register-->
+             <!--<div data-role="fieldcontain" class="iu-hide-label" data-inline="true" data-mini="true">
+            
+           <form action="#" method="post">
+            	<ul data-role="listview" data-inset="true">
+                
+                <div class="ui-grid-b">
+                <div class="ui-block-a"><a href="#signin" id="signin" data-role="navbar" >Sign In</a></div>
+               	<div class="ui-block-b">or</div>
+                <div class="ui-block-c"><a href="#register1" id="register1" data-role="navbar" >Register</a></div>
+                </div>
+                </ul>
+            </form>
+            </div>-->
+    	</div>
+        <!--CTA and Feature-->
         <div id="Fluffy">
             <a href="pageAddItemGold.html" data-ajax="false">
                 <img src="IMG/Cute-Dogs-Beauty-Salon.jpg" alt="IMG/Cute-Dogs-Beauty-Salon.jpg" width="290em" height="130em">
@@ -52,8 +92,9 @@
                 </div>
                 <div data-role="fieldcontain">
                     <ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search" data-inset="true"
-                    id="search1">
-                        <li data-role="list-divider" data-autodividers="true">A</li>
+                    id="search1"><a href="JavaScript/JSONGold.js" data-filter="true"></a></ul>
+                    
+                        <!--<li data-role="list-divider" data-autodividers="true">A</li>
                         <li><a href="#">Alex</a></li>
                         <li data-role="list-divider">B</li>
                         <li><a href="#">Bob</a></li>
@@ -118,7 +159,7 @@
                         <li data-role="list-divider">Y</li>
                         <li><a href="#">Yaya</a></li>
                         <li data-role="list-divider">Z</li>
-                        <li><a href="#">Zeus</a></li>
+                        <li><a href="#">Zeus</a></li>-->
                     </ul>
 
                 </div>
@@ -142,96 +183,22 @@
                             <a href="#calendar" data-role="button" data-icon="arrow-r" data-iconpos="right">Schedule</a>
                         </p>
                         <p>
-                            <a href="#style" data-role="button" data-icon="arrow-r" data-iconpos="right">Style</a>
+                            <a href="#groomingInfo" data-role="button" data-icon="arrow-r" data-iconpos="right">Style</a>
                         </p>
                     </div>
                 </div>
             </form>
         </div>
-        <div data-role="footer" class="ui-bar" data-position="fixed" data-theme="c">
-            <h6>Learn More About</h6>
+        <div data-role="footer" style="overflow:hidden;">
+            <h4>I'm the footer</h4>
             <div data-role="navbar">
                 <ul>
-                    <li>
-                        <a href="#companyInfo" data-icon="star">Our Company</a>
-                    </li>
-                    <li>
-                        <a href="#groomingInfo" data-icon="check">Grooming</a>
-                    </li>
-                    <li>
-                        <a href="#breedInfo" data-icon="info">Breeds</a>
-                    </li>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#companyInfo">About Us</a></li>
+                    <li><a href="#groomingInfo">About</a></li>
                 </ul>
-            </div>
-        </div>
-    </div>
-    <!--Login Page-->
-    <div data-role="page" id="signin" data-add-back-btn="true">
-        <div data-role="header" data-position="fixed" data-theme="c">
-            <h1>Login</h1>
-        </div>
-        <div data-role="content">
-            <form method="get" action="">
-                <fieldset data-role="fieldcontain">
-                    <label for="basic">User Name:</label>
-                    <input type="text" name="name" id="username1" value="User name: " />
-                    <label for="basic">Password:</label>
-                    <input type="text" name="name" id="password2" value="Password: " />
-                </fieldset>
-            </form>
-        </div>
-        <div data-role="footer" class="ui-bar" data-position="fixed" data-theme="c">
-            <div data-role="navbar">
-                <ul>
-                    <li>
-                        <a href="" data-icon="star">Clear</a>
-                    </li>
-                    <li>
-                        <a href="" data-icon="check">Submit</a>
-                    </li>
-                    <li>
-                        <a href="" data-icon="edit">Login</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!--Register Page-->
-    <div data-role="page" id="register1" data-add-back-btn="true">
-        <div data-role="header" data-position="fixed" data-theme="c">
-            <h1>Register</h1>
-        </div>
-        <div data-role="content">
-            <form method="get" action="">
-                <fieldset data-role="fieldcontain">
-                    <label for="basic">First Name:</label>
-                    <input type="text" name="name" id="name1" value="First name: " />
-                    <label for="basic">Last Name:</label>
-                    <input type="text" name="name" id="name2" value="Last name: " />
-                    <label for="address">Your Address:</label>
-                    <input type="text" name="address" id="address1" value="Address" />
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" value="email: " />
-                    <label for="tel">Phone Number:</label>
-                    <input name="tel" id="tel" value="555-123-4567" type="tel">
-                </fieldset>
-            </form>
-        </div>
-        <div data-role="footer" class="ui-bar" data-position="fixed" data-theme="c">
-            <div data-role="navbar">
-                <ul>
-                    <li>
-                        <a href="" data-icon="star">Clear</a>
-                    </li>
-                    <li>
-                        <a href="" data-icon="check">Submit</a>
-                    </li>
-                    <li>
-                        <a href="" data-icon="edit">Login</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+            </div><!-- /navbar -->
+        </div><!-- /footer -->
     </div>
     <!--Company Info Page-->
     <div data-role="page" id="companyInfo" data-add-back-btn="true">
