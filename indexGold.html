@@ -29,71 +29,19 @@
 <body>
     <!--Header-->
     <div data-role="page" id="home">
-        <div data-role="header" data-position="fixed" style="overflow:hidden;" data-theme="c">
-        	<b>Grooming PetFolio</b>
-         
-         <div data-role="fieldcontain" class="iu-hide-label">
-            <div class="ui-grid-a">
-                <div class="ui-block-a"><a href="#popupLogin" data-rel="popup" data-position-to="window" data-role="button" data-inline="true" data-icon="check" data-theme="a" data-transition="pop">Sign in</a>
-                    <div data-role="popup" id="popupLogin" data-theme="a" class="ui-corner-all">
-                        <form>
-                            <div style="padding:10px 20px;">
-                                <h3>Please sign in</h3>
-                                <label for="un" class="ui-hidden-accessible">Username:</label>
-                                <input name="user" id="un" value="" placeholder="username" data-theme="a" type="text">
-                                <label for="pw" class="ui-hidden-accessible">Password:</label>
-                                <input name="pass" id="pw" value="" placeholder="password" data-theme="a" type="password">
-                                <button type="submit" data-theme="b" data-icon="check">Sign in</button>
-                            </div>
-                        </form>
-                    </div>
-                    </div>
-                    <div class="ui-block-b"><a href="#popupRegister" data-rel="popup" data-position-to="window" data-role="button" data-inline="true" data-icon="gear" data-theme="a" data-transition="pop">Register</a>
-                    <div data-role="popup" id="popupRegister" data-theme="a" class="ui-corner-all">
-                        <form>
-                            <div style="padding:10px 20px;">
-                                <h3>Please Register</h3>
-                                <label for="un" class="ui-hidden-accessible">Username:</label>
-                                <input name="user" id="un" value="" placeholder="username" data-theme="a" type="text">
-                                <label for="pw" class="ui-hidden-accessible">Password:</label>
-                                <input name="pass" id="pw" value="" placeholder="password" data-theme="a" type="password">
-                                <button type="submit" data-theme="b" data-icon="check">Register</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-		</div>
-            <!--grid view for signin and register-->
-             <!--<div data-role="fieldcontain" class="iu-hide-label" data-inline="true" data-mini="true">
-            
-           <form action="#" method="post">
-            	<ul data-role="listview" data-inset="true">
-                
-                <div class="ui-grid-b">
-                <div class="ui-block-a"><a href="#signin" id="signin" data-role="navbar" >Sign In</a></div>
-               	<div class="ui-block-b">or</div>
-                <div class="ui-block-c"><a href="#register1" id="register1" data-role="navbar" >Register</a></div>
-                </div>
-                </ul>
-            </form>
-            </div>-->
-    	</div>
-        <!--CTA and Feature-->
-        <div id="Fluffy">
-            <a href="pageAddItemGold.html" data-ajax="false">
-                <img src="IMG/Cute-Dogs-Beauty-Salon.jpg" alt="IMG/Cute-Dogs-Beauty-Salon.jpg" width="290em" height="130em">
-             </a>
-         </div>
+       <div data-role="header" data-position="fixed" data-theme="c">
+         	<!--CTA and Feature-->
+            <div id="Fluffy">
+                <a href="pageAddItemGold.html" data-ajax="false">
+                    <img src="IMG/Cute-Dogs-Beauty-Salon.jpg" alt="IMG/Cute-Dogs-Beauty-Salon.jpg" width="290em" height="130em">
+                 </a>
+             </div>
+        </div>
+        <br>
         <form method="get" action="">
-            <div>
-                <div>
-                    
-                </div>
                 <div data-role="fieldcontain">
                     <ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search" data-inset="true"
                     id="search1">
-                    
                         <li data-role="list-divider" data-autodividers="true">A</li>
                         <li><a href="#">Alex</a></li>
                         <li data-role="list-divider">B</li>
@@ -161,14 +109,47 @@
                         <li data-role="list-divider">Z</li>
                         <li><a href="#">Zeus</a></li>
                     </ul>
-
-                </div>
             </div>
         </form>
         <div data-role="content">
+            <!--<div data-role="fieldcontain">
+             <div class="ui-grid-a">
+                <div class="ui-block-a">
+                <a href="#popupLogin" data-rel="popup" data-role="button" data-inline="true" data-icon="check" data-theme="a" data-transition="pop">Sign in</a>
+                    <div data-role="popup" id="popupLogin" data-theme="a" class="ui-content">
+                        <form method="get" action="">
+                            <div>
+                                <h3>Please sign in</h3>
+                                <label for="un" class="ui-hidden-accessible">Username:</label>
+                                <input name="user" id="un" value="" placeholder="username" data-theme="a" type="text">
+                                <label for="pw" class="ui-hidden-accessible">Password:</label>
+                                <input name="pass" id="pw" value="" placeholder="password" data-theme="a" type="password">
+                                <button type="submit" data-theme="b" data-icon="check">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                 </div>
+                    <div class="ui-block-b">
+                    <a href="#popupRegister" data-rel="popup" data-role="button" data-inline="true" data-icon="gear" data-theme="a" data-transition="pop">Register</a>
+                    <div data-role="popup" id="popupRegister" data-theme="a" class="ui-content">
+                        <form>
+                            <div>
+                                <h3>Please Register</h3>
+                                <label for="un" class="ui-hidden-accessible">Username:</label>
+                                <input name="user" id="un" value="" placeholder="username" data-theme="a" type="text">
+                                <label for="pw" class="ui-hidden-accessible">Password:</label>
+                                <input name="pass" id="pw" value="" placeholder="password" data-theme="a" type="password">
+                                <button type="submit" data-theme="b" data-icon="check">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>		
+            </div>-->
+            </div>
             <form method="get" action="">
                 <div data-role="fieldcontain" class="iu-hide-label">
-                    <li>Or Browse By:</li>
+                    <h3>Or Browse By:</h3>
                     <div data-role="controlgroup">
                         <p>
                             <a href="#owners" data-role="button" data-icon="arrow-r" data-iconpos="right">Owner Name</a>
@@ -188,14 +169,13 @@
                     </div>
                 </div>
             </form>
-        </div>
-        <div data-role="footer" style="overflow:hidden;">
-            <h4>I'm the footer</h4>
+        
+        <div data-role="footer" data-position="fixed" data-theme="c">
             <div data-role="navbar">
                 <ul>
-                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Home"class="ui-btn-active">Home</a></li>
                     <li><a href="#companyInfo">About Us</a></li>
-                    <li><a href="#groomingInfo">About</a></li>
+                    <li><a href="pageAddItemGold.html" data-ajax="false">Add a Pet</a></li>
                 </ul>
             </div><!-- /navbar -->
         </div><!-- /footer -->
@@ -212,21 +192,15 @@
                 <time>2013-08-17</time>
             </p>
         </div>
-        <div data-role="footer" data-position="fixed" data-theme="c">
+         <div data-role="footer" data-position="fixed" data-theme="c">
             <div data-role="navbar">
                 <ul>
-                    <li>
-                        <a href="#request" data-icon="star">Request</a>
-                    </li>
-                    <li>
-                        <a href="#favorite" data-icon="check">Favorite</a>
-                    </li>
-                    <li>
-                        <a href="#edit" data-icon="edit">Edit</a>
-                    </li>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#companyInfo" class="ui-btn-active">About Us</a></li>
+                    <li><a href="pageAddItemGold.html" data-ajax="false">Add a Pet</a></li>
                 </ul>
-            </div>
-        </div>
+            </div><!-- /navbar -->
+        </div><!-- /footer -->
     </div>
     <!--Grooming Info Page-->
     <div data-role="page" id="groomingInfo" data-add-back-btn="true">
@@ -257,21 +231,15 @@
                 </div>
             </div>
         </div>
-        <div data-role="footer" data-position="fixed" data-theme="c">
+         <div data-role="footer" data-position="fixed" data-theme="c">
             <div data-role="navbar">
                 <ul>
-                    <li>
-                        <a href="#request" data-icon="star">Request</a>
-                    </li>
-                    <li>
-                        <a href="#favorite" data-icon="check">Favorite</a>
-                    </li>
-                    <li>
-                        <a href="#edit" data-icon="edit">Edit</a>
-                    </li>
+                    <li><a href="#Home"class="ui-btn-active">Home</a></li>
+                    <li><a href="#companyInfo">About Us</a></li>
+                    <li><a href="pageAddItemGold.html" data-ajax="false">Add a Pet</a></li>
                 </ul>
-            </div>
-        </div>
+            </div><!-- /navbar -->
+        </div><!-- /footer -->
     </div>
     <!--Breed Info Page-->
     <div data-role="page" id="breedInfo" data-add-back-btn="true">
@@ -300,21 +268,15 @@
                 </li>
             </ul>
         </div>
-        <div data-role="footer" data-position="fixed" data-id="info" data-theme="c">
+         <div data-role="footer" data-position="fixed" data-theme="c">
             <div data-role="navbar">
                 <ul>
-                    <li>
-                        <a href="#request" data-icon="star">Request</a>
-                    </li>
-                    <li>
-                        <a href="#favorite" data-icon="check">Favorite</a>
-                    </li>
-                    <li>
-                        <a href="#edit" data-icon="edit">Edit</a>
-                    </li>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#companyInfo">About Us</a></li>
+                    <li><a href="pageAddItemGold.html" data-ajax="false">Add a Pet</a></li>
                 </ul>
-            </div>
-        </div>
+            </div><!-- /navbar -->
+        </div><!-- /footer -->
     </div>
 
     <!--Owner page-->
@@ -326,21 +288,15 @@
             <p>There will be a link to all owners here
             </p>
         </div>
-        <div data-role="footer" data-position="fixed" data-id="info" data-theme="c">
+         <div data-role="footer" data-position="fixed" data-theme="c">
             <div data-role="navbar">
                 <ul>
-                    <li>
-                        <a href="#request" data-icon="star">Request</a>
-                    </li>
-                    <li>
-                        <a href="#favorite" data-icon="check">Favorite</a>
-                    </li>
-                    <li>
-                        <a href="#edit" data-icon="edit">Edit</a>
-                    </li>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#companyInfo">About Us</a></li>
+                    <li><a href="pageAddItemGold.html" data-ajax="false">Add a Pet</a></li>
                 </ul>
-            </div>
-        </div>
+            </div><!-- /navbar -->
+        </div><!-- /footer -->
     </div>
     <!--Pet Name page-->
     <div data-role="page" id="pets" data-add-back-btn="true">
@@ -351,21 +307,15 @@
             <p>There will be a link to all pets here
             </p>
         </div>
-        <div data-role="footer" data-position="fixed" data-id="info" data-theme="c">
+         <div data-role="footer" data-position="fixed" data-theme="c">
             <div data-role="navbar">
                 <ul>
-                    <li>
-                        <a href="#request" data-icon="star">Request</a>
-                    </li>
-                    <li>
-                        <a href="#favorite" data-icon="check">Favorite</a>
-                    </li>
-                    <li>
-                        <a href="#edit" data-icon="edit">Edit</a>
-                    </li>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#companyInfo">About Us</a></li>
+                    <li><a href="pageAddItemGold.html" data-ajax="false">Add a Pet</a></li>
                 </ul>
-            </div>
-        </div>
+            </div><!-- /navbar -->
+        </div><!-- /footer -->
     </div>
     <!--Breed Page-->
     <div data-role="page" id="breeds" data-add-back-btn="true">
@@ -376,21 +326,15 @@
         <div data-role="content">
 
         </div>
-        <div data-role="footer" data-position="fixed" data-id="info" data-theme="c">
+         <div data-role="footer" data-position="fixed" data-theme="c">
             <div data-role="navbar">
                 <ul>
-                    <li>
-                        <a href="#request" data-icon="star">Request</a>
-                    </li>
-                    <li>
-                        <a href="#favorite" data-icon="check">Favorite</a>
-                    </li>
-                    <li>
-                        <a href="#edit" data-icon="edit">Edit</a>
-                    </li>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#companyInfo">About Us</a></li>
+                    <li><a href="pageAddItemGold.html" data-ajax="false">Add a Pet</a></li>
                 </ul>
-            </div>
-        </div>
+            </div><!-- /navbar -->
+        </div><!-- /footer -->
     </div>
     <!--Calendar-->
     <div data-role="page" id="calendar" data-add-back-btn="true">
@@ -400,21 +344,15 @@
         <div data-role="content">
             <p>Monthly Schedule</p>
         </div>
-        <div data-role="footer" data-position="fixed" data-id="info" data-theme="c">
+         <div data-role="footer" data-position="fixed" data-theme="c">
             <div data-role="navbar">
                 <ul>
-                    <li>
-                        <a href="#request" data-icon="star">Request</a>
-                    </li>
-                    <li>
-                        <a href="#favorite" data-icon="check">Favorite</a>
-                    </li>
-                    <li>
-                        <a href="#edit" data-icon="edit">Edit</a>
-                    </li>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#companyInfo">About Us</a></li>
+                    <li><a href="pageAddItemGold.html" data-ajax="false">Add a Pet</a></li>
                 </ul>
-            </div>
-        </div>
+            </div><!-- /navbar -->
+        </div><!-- /footer -->
     </div>
 <div data-role="page" id="style" data-add-back-btn="true">
         <div data-role="header" data-position="fixed" data-theme="c">
@@ -424,21 +362,15 @@
             <p>There will be a link to styles here
             </p>
         </div>
-        <div data-role="footer" data-position="fixed" data-id="info" data-theme="c">
+        <div data-role="footer" data-position="fixed" data-theme="c">
             <div data-role="navbar">
                 <ul>
-                    <li>
-                        <a href="#request" data-icon="star">Request</a>
-                    </li>
-                    <li>
-                        <a href="#favorite" data-icon="check">Favorite</a>
-                    </li>
-                    <li>
-                        <a href="#edit" data-icon="edit">Edit</a>
-                    </li>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#companyInfo">About Us</a></li>
+                    <li><a href="pageAddItemGold.html" data-ajax="false">Add a Pet</a></li>
                 </ul>
-            </div>
-        </div>
+            </div><!-- /navbar -->
+        </div><!-- /footer -->
     </div>
     <!--JS-->
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
