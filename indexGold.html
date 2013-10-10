@@ -38,11 +38,11 @@
              </div>
         </div>
         <br>
-        <form method="get" action="">
+        <form method="get" action="search">
                 <div data-role="fieldcontain">
                     <ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search" data-inset="true"
-                    id="search1">
-                        <li data-role="list-divider" data-autodividers="true">A</li>
+                    id="search1">                        
+                    <li data-role="list-divider" data-autodividers="true">A</li>
                         <li><a href="#">Alex</a></li>
                         <li data-role="list-divider">B</li>
                         <li><a href="#">Bob</a></li>
@@ -306,35 +306,37 @@
         </div>
         <div data-role="content">
             <div class="ui-grid-b">
-			
-            <!-- 1st row -->
+	<!-- Need to insert links for the thumbnal grid -->		
+    <!-- 1st row -->
     <div class="ui-block-a">
-    	<div class="ui-bar ui-bar-a" style="height:80px">
-        <img src="IMG/Delilah.jpg" /><a href="#"></a></div>Shave</div>
+    	<div class="ui-body ui-body-a" style="height:120px">Shaves
+        <img src="IMG/Delilah.jpg" /><a href="#"></a></div></div>
     <div class="ui-block-b">
-    	<div class="ui-bar ui-bar-a" style="height:80px">
-        <img src="IMG/2012-10-119521-39-5395118.jpg" /><a href="#"></a></div>Color</div>
+    	<div class="ui-body ui-body-a" style="height:120px">Hairless
+        <img src="IMG/Hairless.jpg" /><a href="#"></a></div></div>
     <div class="ui-block-c">
-    	<div class="ui-bar ui-bar-a" style="height:80px">
-        <img src="IMG/Fox.jpg" /><a href="#"></a></div>Aged Pets</div>
+    <div class="ui-body ui-body-a" style="height:120px">Blades
+        <img src="IMG/PuppyClip.jpg" /><a href="#"></a></div></div>
+    <!-- 2nd row -->
     <div class="ui-block-a">
-    	<div class="ui-bar ui-bar-a" style="height:80px">
-        <img src="IMG/Hairless.jpg" /><a href="#"></a></div>Hairless</div>
+    	<div class="ui-body ui-body-a" style="height:120px"><a href="#"></a>Faces
+        <img src="IMG/TeddyHead.jpg" /></div></div>
     <div class="ui-block-b">
-    	<div class="ui-bar ui-bar-a" style="height:80px">
-        <img src="IMG/Mohawk.jpg" /><a href="#"></a></div>Mohawk</div>
+    	<div class="ui-body ui-body-a" style="height:120px">Mohawk
+        <img src="IMG/Mohawk.jpg" /><a href="#"></a></div></div>
    <div class="ui-block-c">
-    	<div class="ui-bar ui-bar-a" style="height:80px">
-        <img src="IMG/Puppy.jpg" /><a href="#"></a></div>Puppies!</div>
+    <!-- 3rd row -->
+    	<div class="ui-body ui-body-a" style="height:120px">Color
+        <img src="IMG/2012-10-119521-39-5395118.jpg" /><a href="#"></a></div></div>
     <div class="ui-block-a">
-    	<div class="ui-bar ui-bar-a" style="height:80px">
-        <img src="IMG/Teddy.jpg" /><a href="#"></a></div>Combs</div>
+    	<div class="ui-body ui-body-a" style="height:120px">Combs
+        <img src="IMG/Teddy.jpg" /><a href="#"></a></div></div>
     <div class="ui-block-b">
-    	<div class="ui-bar ui-bar-a" style="height:80px">
-        <img src="IMG/PuppyClip.jpg" /><a href="#"></a></div>Blades</div>
+    	<div class="ui-body ui-body-a" style="height:120px">Puppies!
+        <img src="IMG/Puppy.jpg" /><a href="#"></a></div></div>
     <div class="ui-block-c">
-    	<div class="ui-bar ui-bar-a" style="height:80px">
-        <img src="IMG/TeddyHead.jpg" /><a href="#"></a></div>Faces</div>
+    	<div class="ui-body ui-body-a" style="height:120px"><a href="#"></a>Seniors
+        <img src="IMG/Fox.jpg" /></div></div>
 </div><!-- /grid-c -->
         </div>
          <div data-role="footer" data-position="fixed" data-theme="c">
@@ -372,8 +374,51 @@
             <h1>Schedule/Calendar</h1>
         </div>
         <div data-role="content">
-            <p>Monthly Schedule</p>
-        </div>
+            <div data-role="page" id="pageone">
+  </div>
+    <h2>My Calendar</h2>
+    <ul data-role="listview" data-inset="true">
+      <li data-role="list-divider">Friday, October 11, 2013 <span class="ui-li-count">2</span></li>   
+      <li><a href="#">   
+        <h2>Delilah</h2>
+        <h3>Shih Tzu</h3>
+       <b>Typical haircut</b>
+        <p>#7 A/O Trim Tail</p>
+        <p>Muzzle for nails</p>
+        <p>Mom likes her to have a bandanna</p>
+        <p class="ui-li-aside">Re: Appointment</p></a>
+      </li>
+      <li><a href="#">
+        <h2>Luigi</h2>
+        <p>Good boy!</p>
+        <p> Bath and nails!</p>
+        <br>
+        
+        <p class="ui-li-aside">Re: Appointment</p></a>
+      </li>
+      <li data-role="list-divider">Tuesday, October 1, 2013 <span class="ui-li-count">1</span></li>   
+      <li><a href="#">   
+        <h2>Louis</h2>
+        <p><b>Golden</b></p>
+        <p>New client</p>
+        <p class="ui-li-aside">Re: Initial meeting</p></a>
+      </li>
+      <li data-role="list-divider">Tuesday, September 1, 2013 <span class="ui-li-count">1</span></li>   
+      <li><a href="#">   
+        <h2>Abby</h2>
+        <p><b>Shetland Sheepdog</b></p>
+        <p>New client</p>
+        <p class="ui-li-aside">Re: Initial meeting</p></a>
+        </li>
+      <li><a href="#">
+        <h2>Chester</h2>
+        <b>Cat</b>
+        <p>Good boy!</p>
+        <p> Bath and nails!</p>
+        <br></a>
+      </li>
+    </ul>
+  </div>
          <div data-role="footer" data-position="fixed" data-theme="c">
             <div data-role="navbar">
                 <ul>
