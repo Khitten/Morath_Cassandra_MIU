@@ -112,7 +112,30 @@
             </div>
         </form>
         <div data-role="content">
-            <div data-role="fieldcontain">
+           
+            <form method="get" action="">
+                <div data-role="fieldcontain" class="iu-hide-label">
+                    <h3>Or Browse By:</h3>
+                    <div data-role="controlgroup">
+                        <p>
+                            <a href="#owners" data-role="button" data-icon="arrow-r" data-iconpos="right">Owner Name</a>
+                        </p>
+                        <p>
+                            <a href="#pets" data-role="button" data-icon="arrow-r" data-iconpos="right">Pet Picture</a>
+                        </p>
+                        <p>
+                            <a href="#breedInfo" data-role="button" data-icon="arrow-r" data-iconpos="right">Breeds</a>
+                        </p>
+                        <p>
+                            <a href="#calendar" data-role="button" data-icon="arrow-r" data-iconpos="right">Schedule</a>
+                        </p>
+                        <p>
+                            <a href="#groomingInfo" data-role="button" data-icon="arrow-r" data-iconpos="right">Style</a>
+                        </p>
+                    </div>
+                </div>
+            </form>
+         <div data-role="fieldcontain">
              <div class="ui-grid-a">
                 <div class="ui-block-a">
                 <a href="#popupLogin" data-rel="popup" data-position-to="window" data-role="button" data-inline="true" data-icon="check" data-theme="a" data-transition="pop">Sign in</a>
@@ -147,29 +170,6 @@
             </div>		
             </div>
             </div>
-            <form method="get" action="">
-                <div data-role="fieldcontain" class="iu-hide-label">
-                    <h3>Or Browse By:</h3>
-                    <div data-role="controlgroup">
-                        <p>
-                            <a href="#owners" data-role="button" data-icon="arrow-r" data-iconpos="right">Owner Name</a>
-                        </p>
-                        <p>
-                            <a href="#pets" data-role="button" data-icon="arrow-r" data-iconpos="right">Pet Name</a>
-                        </p>
-                        <p>
-                            <a href="#breeds" data-role="button" data-icon="arrow-r" data-iconpos="right">Breeds</a>
-                        </p>
-                        <p>
-                            <a href="#calendar" data-role="button" data-icon="arrow-r" data-iconpos="right">Schedule</a>
-                        </p>
-                        <p>
-                            <a href="#groomingInfo" data-role="button" data-icon="arrow-r" data-iconpos="right">Style</a>
-                        </p>
-                    </div>
-                </div>
-            </form>
-        </div>
         <div data-role="footer" data-position="fixed" data-theme="c">
             <div data-role="navbar">
                 <ul>
@@ -305,8 +305,17 @@
             <h1>Pets</h1>
         </div>
         <div data-role="content">
-            <p>There will be a link to all pets here
-            </p>
+            <div class="ui-grid-b">
+    <div class="ui-block-a"><div class="ui-bar ui-bar-e" style="height:60px">A</div></div>
+    <div class="ui-block-b"><div class="ui-bar ui-bar-e" style="height:60px">B</div></div>
+    <div class="ui-block-c"><div class="ui-bar ui-bar-e" style="height:60px">C</div></div>
+    <div class="ui-block-a"><div class="ui-bar ui-bar-e" style="height:60px">A</div></div>
+    <div class="ui-block-b"><div class="ui-bar ui-bar-e" style="height:60px">B</div></div>
+    <div class="ui-block-c"><div class="ui-bar ui-bar-e" style="height:60px">C</div></div>
+    <div class="ui-block-a"><div class="ui-bar ui-bar-e" style="height:60px">A</div></div>
+    <div class="ui-block-b"><div class="ui-bar ui-bar-e" style="height:60px">B</div></div>
+    <div class="ui-block-c"><div class="ui-bar ui-bar-e" style="height:60px">C</div></div>
+</div><!-- /grid-c -->
         </div>
          <div data-role="footer" data-position="fixed" data-theme="c">
             <div data-role="navbar">
