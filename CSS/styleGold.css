@@ -123,3 +123,7 @@ margin: 6px 1.5px 1px 1.5px;
 text-align:center;
 float:right;
 }
+.ui-grid-b img {
+    width  : 100%;
+    height : auto;	
+}
