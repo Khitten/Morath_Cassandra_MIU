@@ -115,6 +115,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		}
 	}
 	
+	
 	//get the image for the righ category
 	function getImage(cataName, makeSubList){
 		var imageLi = document.createElement("li");
@@ -287,5 +288,6 @@ window.addEventListener("DOMContentLoaded", function(){
 		display.addEventListener("click", getData);
 	var save = $("store");
 		store.addEventListener("click", validate);
-		
+	//var createDisplay = $("home");
+		//createDisplay.addEventListener("onLoad", createSearchList);	
 });
