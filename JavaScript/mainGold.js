@@ -2,13 +2,16 @@
 //Cassandra Morath
 //MiU 1308
 //August 14, 2013
+$('#home').on('pageinit', function(){
+	//code needed for home page goes here
+});		
+		
 window.addEventListener("DOMContentLoaded", function(){
 //Get elementById function
 	function $(x){
 		var elementId = document.getElementById(x);
 		return elementId;
 	}
-	
 //create select field element and populate with options
 	function chooseBreed(){ 
 		var selectLi = $('breed');
@@ -360,6 +363,6 @@ window.addEventListener("DOMContentLoaded", function(){
 					}
 				}	
 			}
-			
 		
+			
 });

@@ -20,9 +20,9 @@
 </head>
 <body>
 <!--Header--> 
-	<div data-role="page" id="formField">
-		<div data-role="header" data-position="fixed" data-theme="c">
-			<h1>Add Your Pet</h1>
+	<div data-role="page" id="addItem">
+		<div data-role="header" data-position="fixed" data-theme="c" data-add-back-btn="true">
+			<h2>Add Your Pet</h2>
 		</div><!-- /header -->
 
 	<div data-role="content"><!--Form-->
@@ -87,7 +87,7 @@
         <fieldset data-role="controlgroup">
             <div>
                 <p>What is the pet's sex?</p><br />
-                <input name="radio-choice-v-2" id="male" value="on" checked="checked" type="radio">
+                <input name="radio-choice-v-2" id="male" value="off" checked="checked" type="radio">
                 <label for="radio-choice-v-2a">Male</label>
                 <input name="radio-choice-v-2" id="female" value="off" type="radio">
                 <label for="radio-choice-v-2b">Female</label>
@@ -95,7 +95,7 @@
                 <label for="radio-choice-v-2c">Neutered</label>
                 <input name="radio-choice-v-2" id="spayed" value="other" type="radio">
                 <label for="radio-choice-v-2d">Spayed</label>
-                <input name="radio-choice-v-2" id="unknown" value="other" type="radio">
+                <input name="radio-choice-v-2" id="unknown" value="on" type="radio">
                 <label for="radio-choice-v-2e">Unknown</label>
             </div>
         </fieldset>
@@ -181,9 +181,9 @@
 </div>
 	<fieldset>
         <h4>Difficulty</h4><!--Range -->
-            <li><input type="range" name="slider" min="1" max="10" id="slider"></li>
+            <li><input type="range" name="slider" min="1" max="10" value="5" id="slider"></li>
                 <input type="hidden" value="true" />
-        	<p>On a scale from 1 to 10, how difficult was the groom?</p>
+        	<p>On a scale from 1 to 10, how difficult was the groom? 5 being average.</p>
             <li><label for="pnotes"></label></li>
                 <textarea name="pnotes" id="pnotes" placeholder="Notes: " data-theme="b" type="text"></textarea>
                     <p>Example: Oatmeal bath, extra brushing</p>
@@ -200,7 +200,7 @@
 		<div data-role="navbar">
                 <ul>
                     <li><a href="indexGold.html" data-ajax="false">Home</a></li>
-                    <li><a href="#">Submit</a></li>
+                    <li> <a href="#companyInfo">About Us</a></li>
                     <li><a href="#">Clear Fields</a></li>
                 </ul>
             </div>
