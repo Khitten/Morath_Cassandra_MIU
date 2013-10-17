@@ -16,7 +16,6 @@
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, user-scalable="yes", initial-scale=1.0">
     <meta http-equiv="cleartype" content="on">
-    <link rel="stylesheet" href="CSS/PetTheme.css" />
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
     <link href="CSS/styleGold.css" type="text/css" rel="stylesheet" />
 
@@ -27,6 +26,9 @@
 </head>
 
 <body>
+
+	
+
     <!--Header-->
     <div data-role="page" id="home">
        <div data-role="header" data-position="fixed" data-theme="c">
@@ -37,60 +39,10 @@
                  </a>
              </div>
         </div>
-        <br>
-        <form method="get" action="search">
-                <div data-role="fieldcontain">
-                    <ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search" data-inset="true"
-                    id="search1">                        
-                    
-                        <!--<li><a href="#">Alex</a></li>
-                        <li><a href="#">Bob</a></li>
-                        <li><a href="#">Cass</a></li>
-                        <li><a href="#">Cranberry</a></li>
-                        <li><a href="#">Cranberry</a></li>
-                        <li><a href="#">Elphie</a></li>
-                        <li><a href="#">Frankie</a></li>
-                        <li><a href="#">George</a></li>
-                        <li><a href="#">Gus</a></li>
-                        <li><a href="#">Hank</a></li>
-                        <li><a href="#">Henry</a></li>
-                        <li><a href="#">Isabel</a></li>
-                        <li><a href="#">Isis</a></li>
-                        <li><a href="#">Juicy</a></li>
-                        <li><a href="#">Karen</a></li>
-                        <li><a href="#">Kipper</a></li>
-                        <li><a href="#">Lem</a></li>
-                        <li><a href="#">Lacy</a></li>
-                        <li><a href="#">Major</a></li>
-                        <li><a href="#">May</a></li>
-                        <li><a href="#">Nana</a></li>
-                        <li><a href="#">North</a></li>
-                        <li><a href="#">Olsen</a></li>
-                        <li><a href="#">Owen</a></li>
-                        <li><a href="#">Prissy</a></li>
-                        <li><a href="#">Pop</a></li>
-                        <li><a href="#">Que</a></li>
-                        <li><a href="#">Quint</a></li>
-                        <li><a href="#">Rock</a></li>
-                        <li><a href="#">Russ</a></li>
-                        <li><a href="#">Sissy</a></li>
-                        <li><a href="#">Steve</a></li>
-                        <li><a href="#">Tango</a></li>
-                        <li><a href="#">Tugger</a></li>
-                        <li><a href="#">Ubu</a></li>
-                        <li><a href="#">Victor</a></li>
-                        <li><a href="#">Windy</a></li>
-                        <li><a href="#">Xena</a></li>
-                        <li><a href="#">Yaya</a></li>
-                        <li><a href="#">Zeus</a></li>-->
-                    </ul>
-            </div>
-        </form>
-        <div data-role="content">
-           
             <form method="get" action="">
                 <div data-role="fieldcontain" class="iu-hide-label">
-                    <h3>Or Browse By:</h3>
+               
+                    <h3>Browse By:</h3>
                     <div data-role="controlgroup">
                         <p>
                             <a href="#owners" data-role="button" data-icon="arrow-r" data-iconpos="right">Owner Name</a>
@@ -147,8 +99,7 @@
                     </div>
                 </div>
             </div>		
-            </div>
-            </div>
+        </div>
         <div data-role="footer" data-position="fixed" data-theme="c">
             <div data-role="navbar">
                 <ul>
@@ -159,7 +110,24 @@
             </div><!-- /navbar -->
         </div><!-- /footer -->
     </div>
+    <!--This is where the form results should go-->
+    <div data-role="page">			
+
+	<div data-role="header">
+		<h1>Clients</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" id="list">
+	<li><a href="JavaScript/mainGold.js" data-ajax="false"></a></li>
     
+   
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
     <!--Company Info Page-->
     <div data-role="page" id="companyInfo" data-add-back-btn="true">
         <div data-role="header" data-position="fixed" data-theme="c">
@@ -266,14 +234,86 @@
         </div><!-- /footer -->
     </div>
 
-    <!--Owner page-->
+    <!--Name page-->
     <div data-role="page" id="owners" data-add-back-btn="true">
         <div data-role="header" data-position="fixed" data-theme="c">
-            <h1>Owners</h1>
+            <h1>Name list</h1>
         </div>
         <div data-role="content">
-            <p>There will be a link to all owners here
-            </p>
+        <p>Please search by name:</p>
+        <form method="get" action="search">
+                <div data-role="fieldcontain">
+                    <ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search" data-inset="true"
+                    id="search1">
+                        <li data-role="list-divider" data-autodividers="true">A</li>
+                        <li><a href="#">Alex</a></li>
+                        <li data-role="list-divider">B</li>
+                        <li><a href="#">Bob</a></li>
+                        <li data-role="list-divider">C</li>
+                        <li><a href="#">Cass</a></li>
+                        <li><a href="#">Cranberry</a></li>
+                        <li data-role="list-divider">D</li>
+                        <li><a href="#">Cray</a></li>
+                        <li data-role="list-divider">E</li>
+                        <li><a href="#">Elphie</a></li>
+                        <li data-role="list-divider">F</li>
+                        <li><a href="#">Frankie</a></li>
+                        <li data-role="list-divider">G</li>
+                        <li><a href="#">George</a></li>
+                        <li><a href="#">Gus</a></li>
+                        <li data-role="list-divider">H</li>
+                        <li><a href="#">Hank</a></li>
+                        <li><a href="#">Henry</a></li>
+                        <li data-role="list-divider">I</li>
+                        <li><a href="#">Isabel</a></li>
+                        <li><a href="#">Isis</a></li>
+                        <li data-role="list-divider">J</li>
+                        <li><a href="#">Juicy</a></li>
+                        <li data-role="list-divider">K</li>
+                        <li><a href="#">Karen</a></li>
+                        <li><a href="#">Kipper</a></li>
+                        <li data-role="list-divider">L</li>
+                        <li><a href="#">Lem</a></li>
+                        <li><a href="#">Lacy</a></li>
+                        <li data-role="list-divider">M</li>
+                        <li><a href="#">Major</a></li>
+                        <li><a href="#">May</a></li>
+                        <li data-role="list-divider">N</li>
+                        <li><a href="#">Nana</a></li>
+                        <li><a href="#">North</a></li>
+                        <li data-role="list-divider">O</li>
+                        <li><a href="#">Olsen</a></li>
+                        <li><a href="#">Owen</a></li>
+                        <li data-role="list-divider">P</li>
+                        <li><a href="#">Prissy</a></li>
+                        <li><a href="#">Pop</a></li>
+                        <li data-role="list-divider">Q</li>
+                        <li><a href="#">Que</a></li>
+                        <li><a href="#">Quint</a></li>
+                        <li data-role="list-divider">R</li>
+                        <li><a href="#">Rock</a></li>
+                        <li><a href="#">Russ</a></li>
+                        <li data-role="list-divider">S</li>
+                        <li><a href="#">Sissy</a></li>
+                        <li><a href="#">Steve</a></li>
+                        <li data-role="list-divider">T</li>
+                        <li><a href="#">Tango</a></li>
+                        <li><a href="#">Tugger</a></li>
+                        <li data-role="list-divider">U</li>
+                        <li><a href="#">Ubu</a></li>
+                        <li data-role="list-divider">V</li>
+                        <li><a href="#">Victor</a></li>
+                        <li data-role="list-divider">W</li>
+                        <li><a href="#">Windy</a></li>
+                        <li data-role="list-divider">X</li>
+                        <li><a href="#">Xena</a></li>
+                        <li data-role="list-divider">Y</li>
+                        <li><a href="#">Yaya</a></li>
+                        <li data-role="list-divider">Z</li>
+                        <li><a href="#">Zeus</a></li>
+                    </ul>
+            </div>
+        </form>
         </div>
          <div data-role="footer" data-position="fixed" data-theme="c">
             <div data-role="navbar">
@@ -285,6 +325,7 @@
             </div><!-- /navbar -->
         </div><!-- /footer -->
     </div>
+    
     <!--Pet Name page-->
     <div data-role="page" id="pets" data-add-back-btn="true">
         <div data-role="header" data-position="fixed" data-theme="c">

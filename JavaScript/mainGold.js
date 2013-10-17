@@ -109,8 +109,12 @@ window.addEventListener("DOMContentLoaded", function(){
 				var optSubText = obj[n][0] + " " + obj[n][1];
 				makeSubli.innerHTML = optSubText;
 				makeSubList.appendChild(linksli);
+				for (var i = 0; i < len; i++) {
+  				$('#list').append('<div>Test ' + i + '</div>');
+			}
 			}
 			makeItemLinks(localStorage.key(i), linksli); 
+			
 			//create our edit and delete buttons and link for each item in local storage
 		}
 	}
@@ -295,11 +299,12 @@ window.addEventListener("DOMContentLoaded", function(){
 		search.addEventListener("click", getSearch);
 		
 		function getSearch(){
-			var category = $("breed").value;
+			alert("Search");
+			
 			var term = $("search").value;
 		
 			//search by breed only
-			if(category != "--Choose A Breed--" && term==""){
+			if(term==""){
 				var makeDiv = document.createElement("div");
 				makeDiv.setAttribute("id","items");
 				var makeList = document.createElement("ul");
@@ -313,20 +318,20 @@ window.addEventListener("DOMContentLoaded", function(){
 					var item = JSON.parse(value);
 					var makeSubList = document.createElement("ul")
 					makeli.appendChild(makeSubList);
-					if (category === item.breed[1]){
+					//if (category === item.breed[1]){
 						for(n in item){
 							var makeSubli = document.createElement("li");
 							makeSubList.appendChild(makeSubli);
 							var optSubText = item[n][0] + " " + item[n][1];
 							makeSubli.innerHTML = optSubText;
 							makeSubList.appendChild(linksli);
-							//console.log(item[n][0]+": "+item[n][1]);
+							console.log(item[n][0]+": "+item[n][1]);
 						}
-					}
+					//}
 				}
 			}
 			//search by term
-			if(category == "--Choose A Breed--" && term !=""){
+			if(term !=""){
 				var makeDiv = document.createElement("div");
 				makeDiv.setAttribute("id","items");
 				var makeList = document.createElement("ul");
@@ -338,7 +343,7 @@ window.addEventListener("DOMContentLoaded", function(){
 					var key = localStorage.key(i);
 					var value = localStorage.getItem(key);
 					var item = JSON.parse(value);
-					var makeSubList = document.createElement("ul")
+					var makeSubList = document.createElement("ul");
 					makeli.appendChild(makeSubList);
 					for(n in item){
 						var makeSubli = document.createElement("li");
@@ -348,29 +353,13 @@ window.addEventListener("DOMContentLoaded", function(){
 							makeSubList.appendChild(linksli);
 						if(term === item[n][1]){
 							for(q in item){
-								//console.log(item[q][0]+": "+item[q][1]);
+								console.log(item[q][0]+": "+item[q][1]);
 								}
 							}
 						}
 					}
 				}	
-			
-			//search by breed and term
-			if(category != "--Choose A Breed--" && term !=""){
-				for(var i=0, len=localStorage.length; i<len; i++){
-					var key = localStorage.key(i);
-					var value = localStorage.getItem(key);
-					var item = JSON.parse(value);
-					for(n in item){	
-						if(category === item.breed[1] && term ===item[n][1]){
-							for(q in item){
-							console.log(item[q][0]+": "+item[q][1]);	
-							}
-						}
-					}
-				}
 			}
-		}
-			//return invalid restriction
+			
 		
 });
