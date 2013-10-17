@@ -3,7 +3,14 @@
 //MiU 1308
 //August 14, 2013
 $('#home').on('pageinit', function(){
-	//code needed for home page goes here
+	// Prepare your page structure
+var newPage = $("<div data-role='page' id='page'><div data-role=header><a data-iconpos='left' data-icon='back' href='#' data-role='button' data-rel='back'>Back</a><h1>Dynamic Page</h1></div><div data-role=content>Stuff here</div></div>");
+
+// Append the new page into pageContainer
+newPage.appendTo($.mobile.pageContainer);
+
+// Move to this page by ID '#page'
+$.mobile.changePage('#page');
 });		
 		
 window.addEventListener("DOMContentLoaded", function(){
