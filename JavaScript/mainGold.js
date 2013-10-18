@@ -128,6 +128,10 @@ window.addEventListener("DOMContentLoaded", function(){
 			
 			//create our edit and delete buttons and link for each item in local storage
 		}
+		var footerDiv = document.createElement("div");
+		footerDiv.innerHTML = "<h4>Page Footer</h4>";
+		makeDiv.appendChild(footerDiv);
+		footerDiv.setAttribute("data-role" , "footer");
 	}
 	
 	
