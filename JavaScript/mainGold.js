@@ -2,7 +2,7 @@
 //Cassandra Morath
 //MiU 1308
 //August 14, 2013
-$('#home').on('pageinit', function(){
+/*$('#home').on('pageinit', function(){
 	// Prepare your page structure
 var newPage = $("<div data-role='page' id='page'><div data-role=header><a data-iconpos='left' data-icon='back' href='#' data-role='button' data-rel='back'>Back</a><h1>Dynamic Page</h1></div><div data-role=content>Stuff here</div></div>");
 
@@ -11,7 +11,7 @@ newPage.appendTo($.mobile.pageContainer);
 
 // Move to this page by ID '#page'
 $.mobile.changePage('#page');
-});		
+});	*/	
 		
 window.addEventListener("DOMContentLoaded", function(){
 //Get elementById function
@@ -96,7 +96,7 @@ window.addEventListener("DOMContentLoaded", function(){
 			autoPopulate();
 			}
 		//Write data from local storage
-		var makeDiv = document.createElement("div");
+		var makeDiv = $("displayPage");
 		makeDiv.setAttribute("id","items");
 		var makeList = document.createElement("ul");
 		makeDiv.appendChild(makeList);
@@ -119,9 +119,10 @@ window.addEventListener("DOMContentLoaded", function(){
 				var optSubText = obj[n][0] + " " + obj[n][1];
 				makeSubli.innerHTML = optSubText;
 				makeSubList.appendChild(linksli);
-				for (var i = 0; i < len; i++) {
-  				$('#list').append('<div>Test ' + i + '</div>');
-			}
+				//for (var i = 0; i < len; i++) {
+  				//$('#list').append('<div>Test ' + i + '</div>');
+				
+			//}
 			}
 			makeItemLinks(localStorage.key(i), linksli); 
 			
@@ -153,7 +154,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	function makeItemLinks(key, linksli){
 		//add edit single item link
 		var editLinks = document.createElement("a");
-		editLinks.href = "#";
+		editLinks.href = "pageAddItemGold.html";
 		editLinks.key = key;
 		var changeText = "Edit Information";
 		editLinks.addEventListener("click" , editItem);
@@ -166,7 +167,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		
 		//add delete single item delete
 		var deleteLinks = document.createElement("a");
-		deleteLinks.href = "#";
+		deleteLinks.href = "pageAddItemGold.html";
 		deleteLinks.key = key;
 		var deleteText = "Delete Information";
 		deleteLinks.addEventListener("click" , deleteItem);
@@ -240,6 +241,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		}	
 	}
 	function validate(e){
+		
 		//define elements to check
 		var getBreeds = $("breed");
 		var getOwnerName = $("oname");
@@ -250,9 +252,10 @@ window.addEventListener("DOMContentLoaded", function(){
 		getBreeds.style.border = "1px solid black";
 		getOwnerName.style.border = "1px solid black";
 		getPetName.style.border = "1px solid black";
-		
+	
 		//get error messages
 		var messageArray = [ ];
+		
 		//breed validation
 		if (getBreeds.value === "--Choose A Breed--"){
 			var breedError = "Please choose a breed.";
@@ -368,8 +371,8 @@ window.addEventListener("DOMContentLoaded", function(){
 							}
 						}
 					}
-				}	
-			}
+				}
+			}	
 		
 			
 });
