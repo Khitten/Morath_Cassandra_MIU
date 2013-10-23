@@ -224,6 +224,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	}
 	
 	function deleteItem(){
+		
 		var verify = confirm("Are you sure you want to delete this contact?");
 		if (verify){
 			localStorage.removeItem(this.key);
@@ -234,6 +235,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		}
 	}
 	function clearLocal(){
+		
 		//clear local storage.
 		if(localStorage.length === 0){
 			alert("There is no data to clear.")
@@ -306,6 +308,8 @@ window.addEventListener("DOMContentLoaded", function(){
 		clear.addEventListener("click" , clearLocal);
 	var display = $("display");
 		display.addEventListener("click", getData);
+		//var display = $("display");
+		//display.addEventListener("onpageshow", displayPage);
 	var save = $("store");
 		store.addEventListener("click", validate);
 	
