@@ -20,25 +20,23 @@ padding: 2px 2px 2px 2px;
 font-family: Georgia, "Times New Roman", Times, serif;
 font-size: 100%;
 line-height: normal;
-background-color:#CCC;
+
 }
 background {
-background-color:#999;
+
 background-position:center;
-color:#999;
+
 margin:1em;
 }
 p {
 padding:0px;
 margin:0px;
 text-align:left;
-color:#000;
+
 }
-a {
-color:#006;
-}
+
 a:hover {
-color: #960;
+
 border-bottom: 1px dashed #cb7d20;
 }
 li {
@@ -66,7 +64,7 @@ li {
 text-align:center;
 }
 h1 {
-color:#009;
+
 text-align:center;
 font-size:30pt;
 font-family:"Comic Sans MS", cursive;
