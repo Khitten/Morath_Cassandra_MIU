@@ -316,7 +316,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	
 	
 		//Search
-	var	search = $('searchBtn');
+	/*var	search = $('searchBtn');
 		search.addEventListener("click", getSearch);
 		
 		function getSearch(){
@@ -380,7 +380,7 @@ window.addEventListener("DOMContentLoaded", function(){
 						}
 					}
 				}
-			}	
+			}	*/
 		
 			
 });
