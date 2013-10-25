@@ -1,13 +1,12 @@
 // JavaScript Document
-$('#addItem').on('pageinit', function(){
-// Prepare your page structure
-var newPage = $("<div data-role='page' id='page'><div data-role=header><a data-iconpos='left' data-icon='back' href='#' data-role='button' data-rel='back'>Back</a><h1>Client Page</h1></div><div data-role=content>Clients</div></div>");
+$('#home').on('pageinit', function(){
 
-// Append the new page into pageContainer
-newPage.appendTo($.mobile.displayPage);
 
-// Move to this page by ID '#page'
-$.mobile.changePage('#page');
+ 	$(document).ready (function () {
+    $('div[class^=ui-grid]').children ().each (function () {
+    $(this).html ('<div class="ui-bar ui-bar-b" style="height:60px">' + $(this).html () + '</div>');
+  		});
+	});
 });	
 		
 $('#addItem').on('pageinit', function(){
